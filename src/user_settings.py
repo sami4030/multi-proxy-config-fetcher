@@ -4,8 +4,7 @@
 # Add or remove URLs as needed. All URLs in this list are automatically enabled.
 SOURCE_URLS = [
     "https://t.me/s/WireVpnGuard",
-    "https://t.me/s/v2rayfree",
-    "https://t.me/s/FreeV2rays",
+    "https://t.me/WireVpnGuard",
     # Add more URLs here if you want to include additional sources.
 ]
 
@@ -21,12 +20,12 @@ SPECIFIC_CONFIG_COUNT = 100
 # Set each protocol to True to enable, False to disable.
 ENABLED_PROTOCOLS = {
     "wireguard://": True,
-    "hysteria2://": True,
-    "vless://": True,
-    "vmess://": True,
-    "ss://": True,
-    "trojan://": True,
-    "tuic://": True,
+    "hysteria2://": False,
+    "vless://": False,
+    "vmess://": False,
+    "ss://": False,
+    "trojan://": False,
+    "tuic://": False,
 }
 
 # Maximum age of configurations in days.
