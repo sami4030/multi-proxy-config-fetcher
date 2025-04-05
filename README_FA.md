@@ -37,7 +37,7 @@ https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/head
 </div>
 
 ### گزارش تفصیلی
-📊 [مشاهده داشبورد تعاملی کامل](https://htmlpreview.github.io/?https://github.com/4n0nymou3/multi-proxy-config-fetcher/blob/main/assets/performance_report.html)
+📊 [مشاهده داشبورد تعاملی کامل](https://htmlpreview.github.io/?https://github.com/sami4030/multi-proxy-config-fetcher/blob/main/assets/performance_report.html)
 
 > **نکته مهم برای مخازن فورک شده**:  
 اگر این مخزن را فورک می‌کنید، حتماً `USERNAME` را در لینک بالا با نام کاربری گیت‌هاب خود جایگزین کنید. این کار اطمینان می‌دهد که لینک به داشبورد تعاملی مخزن شما به جای داشبورد پروژه اصلی هدایت می‌شود. برای این کار:
