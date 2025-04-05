@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-04-05T18:20:02.648263+00:00",
+  "timestamp": "2025-04-05T18:34:46.097043+00:00",
   "channels": [
     {
       "url": "https://t.me/s/WireVpnGuard",
@@ -8,36 +8,13 @@
         "total_configs": 10,
         "valid_configs": 10,
         "unique_configs": 10,
-        "avg_response_time": 0.43,
+        "avg_response_time": 0.64,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 99.35,
-        "last_success": "2025-04-05T18:20:00.505704+00:00",
+        "overall_score": 99.03,
+        "last_success": "2025-04-05T18:34:46.096472+00:00",
         "protocol_counts": {
           "wireguard://": 10,
-          "hysteria2://": 0,
-          "vless://": 0,
-          "vmess://": 0,
-          "ss://": 0,
-          "trojan://": 0,
-          "tuic://": 0
-        }
-      }
-    },
-    {
-      "url": "https://t.me/WireVpnGuard",
-      "enabled": false,
-      "metrics": {
-        "total_configs": 0,
-        "valid_configs": 0,
-        "unique_configs": 0,
-        "avg_response_time": 0,
-        "success_count": 0,
-        "fail_count": 1,
-        "overall_score": 15.0,
-        "last_success": null,
-        "protocol_counts": {
-          "wireguard://": 0,
           "hysteria2://": 0,
           "vless://": 0,
           "vmess://": 0,
