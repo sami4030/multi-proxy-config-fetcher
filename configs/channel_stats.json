@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-04-15T11:13:09.851830+00:00",
+  "timestamp": "2025-04-15T12:31:57.127806+00:00",
   "channels": [
     {
       "url": "https://t.me/s/WireVpnGuard",
@@ -8,11 +8,11 @@
         "total_configs": 10,
         "valid_configs": 10,
         "unique_configs": 10,
-        "avg_response_time": 0.63,
+        "avg_response_time": 1.34,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 99.05,
-        "last_success": "2025-04-15T11:13:09.851257+00:00",
+        "overall_score": 97.99,
+        "last_success": "2025-04-15T12:31:57.127246+00:00",
         "protocol_counts": {
           "wireguard://": 10,
           "hysteria2://": 0,
