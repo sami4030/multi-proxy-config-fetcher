@@ -4,21 +4,21 @@
 //support-url: https://t.me/BXAMbot
 //profile-web-page-url: https://github.com/4n0nymou3
 
-wireguard://2FZNPz8jzVW2vSAN7QnH5FvJ55QYXjMmDPdjeqibA2Q%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8a90%3A3cb7%3Ab2ac%3Ade9e%3A6572%2F128&reserved=48%2C105%2C233&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
-
 wireguard://HeDQX%2Bl2050Cm62tPYJwA6Kfiy57RykBnnFnNfdQMn4%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A898d%3A8974%3Ab05%3Aab03%3A9167%2F128&reserved=162%2C233%2C239&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
 
 wireguard://IWq7lTCvUrkFWCr6BKWk3rhgfsRIVoAcZLZfAZ9zKp8%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8d26%3Aabdc%3A190e%3A8b0b%3Aa7b9%2F128&reserved=196%2C163%2C195&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
 
+wireguard://LKr%2FTK7AgeDeI0wi0UFSQ0PXsjzBh4ykro1ltj19mQ8%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81aa%3Ab30d%3A5c6a%3A85d0%3A80bd%2F128&reserved=172%2C184%2C238&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
+
 wireguard://Ls0ERk22o2CCTjzMYSM%2B7AUqdFN4db8S5cBpcmDt76Y%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8aa7%3Aa8f6%3Adf51%3Aa6a1%3A7620%2F128&reserved=129%2C37%2C12&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
+
+wireguard://ZXnM7C0jU17%2F0RdEU1jBgzKbbuYsFmw%2B3Go6Wp4qrvM%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8551%3A7df0%3A6e05%3Adcc%3A5aae%2F128&reserved=193%2C197%2C184&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
 
 wireguard://eJEP8j%2FyWlUD%2FaWpgLhCkDhqI9yZ42pvAPF13VLSZSY%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A88ff%3A7468%3Abe3c%3Ab3f%3A938c%2F128&reserved=219%2C250%2C236&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
 
 wireguard://kw9a2R%2B0Nhb4TuQ7KR48ZpnEK1OG8nuPONKmQ%2FgTtK8%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A85de%3A37d6%3Ab685%3Af723%3Abe44%2F128&reserved=145%2C57%2C96&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
 
 wireguard://nDOPLVcjtJwbXwa3PF1oU3GjXo%2FHZWfpfoPZiUZG07k%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8e50%3A2207%3Ad312%3A38e3%3A16c2%2F128&reserved=100%2C146%2C72&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
-
-wireguard://pXtgvZGC9o6bHfXk7tOnHiFa6vlgdaIw7RxRZUkga2c%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81e6%3Aa2f0%3Aa3%3Af32a%3A5c82%2F128&reserved=12%2C110%2C202&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
 
 wireguard://u81j966VL9VOA%2BwM3lIU9YUO927pvwhiQaBk%2F5PrNlo%3D@engage.cloudflareclient.com:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A86fe%3Ad966%3Ab66d%3A4374%3Aaa6c%2F128&reserved=233%2C32%2C117&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_wire-g@WireVpnGuard
 
