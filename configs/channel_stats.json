@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-07-14T09:25:07.910925+00:00",
+  "timestamp": "2025-07-14T10:19:20.762637+00:00",
   "channels": [
     {
       "url": "https://t.me/s/WireVpnGuard",
@@ -12,7 +12,7 @@
         "success_count": 1,
         "fail_count": 0,
         "overall_score": 99.39,
-        "last_success": "2025-07-14T09:25:07.910157+00:00",
+        "last_success": "2025-07-14T10:19:20.762048+00:00",
         "protocol_counts": {
           "wireguard://": 10,
           "hysteria2://": 0,
