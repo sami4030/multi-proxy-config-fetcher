@@ -4,11 +4,11 @@
 //support-url: https://t.me/BXAMbot
 //profile-web-page-url: https://github.com/4n0nymou3
 
-wireguard://01hyOMnxjazprzBedX4jn8qhzR3SRZoElO3IFt2Y1s8%3D@162.159.192.1:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A82b4%3Aedd1%3A931d%3A6374%3Adf38%2F128&reserved=89%2C183%2C78&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
-
 wireguard://0rkuFR%2Bc%2BMpaP1qyRbLTkR6UGSUCXwD2rh6mxIaMURI%3D@162.159.195.1:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81c7%3A6f29%3A950e%3A8424%3A30d1%2F128&reserved=167%2C81%2C224&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
 
 wireguard://J9M94UKShYRBgeW1G1dIiUb7jIP55WKjO6G%2BY6bV5Fg%3D@162.159.193.3:1701?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8fb6%3Ab52e%3Aadd4%3Afe25%3A66d1%2F128&reserved=163%2C108%2C79&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://Ko6hlbyx4IJCxxFcKosKGzyCYvqaKrb9zVYpiNq%2BmvQ%3D@162.159.195.1:4500?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8917%3Ae46f%3A27bc%3A6081%3Abc67%2F128&reserved=251%2C141%2C65&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
 
 wireguard://LdSwg82s%2FZDXlEL6HariFw7v78cNshFuJNJtCxKqjlk%3D@162.159.193.3:1701?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8d2e%3A3be%3Afa34%3A7ad8%3A43c3%2F128&reserved=125%2C170%2C133&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
 
