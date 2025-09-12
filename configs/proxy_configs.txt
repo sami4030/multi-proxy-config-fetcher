@@ -1,0 +1,26 @@
+//profile-title: base64:8J+RvUFub255bW91cy3wnZWP
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/BXAMbot
+//profile-web-page-url: https://github.com/4n0nymou3
+
+wireguard://5msiJC20PV0PWOlsSYB3OGbWKoLUeHGZ9d7lVF8Muzk%3D@162.159.192.1:1701?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ea%3A172f%3A70a3%3A5fd0%3Afaea%2F128&reserved=40%2C102%2C1&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://5xmGNDZhzCBZUWpXXAFctjl%2FhAseQmSFP44y0zWACYE%3D@162.159.193.3:1701?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8804%3A7e42%3A45b2%3Acab%3A357c%2F128&reserved=43%2C121%2C245&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://7vOt%2BMMnmCmBJ7udwwyTaJNl7vpQLUHdbIPcpHekJ9Y%3D@162.159.195.1:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81eb%3Ae41c%3A7c0e%3A156%3A9fe5%2F128&reserved=71%2C169%2C188&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://ENdImpY7VB5%2F022%2FV0oZnpaQcOagZNVV9cIBL9iQhac%3D@162.159.192.1:4500?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A884d%3Acdcf%3A9ac4%3A1cad%3Aea07%2F128&reserved=224%2C100%2C47&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://OtgA2yaQTqcSVML9e%2BYBPCzz5B9hrE38ed68D%2BYu6mg%3D@162.159.195.1:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8b95%3A9d08%3Aaaa5%3Af55f%3A9862%2F128&reserved=183%2C83%2C10&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://RW%2BIqa6f20Mf%2BA3yRwJsLBTZh0TOkJYCmevEHGT6cmU%3D@162.159.192.1:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8eda%3A5b%3Ac453%3Ac39e%3A3277%2F128&reserved=231%2C102%2C102&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://sXF%2BsCFEBl2qGdG4wxtSWKz3kAOzzmMCe6qbMvO89P0%3D@162.159.192.1:500?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8fec%3A1dfd%3A191f%3Aaf87%3Abc4c%2F128&reserved=27%2C155%2C208&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://swzKQBBYsG0%2FGRI0%2FRJjDUBR2nDcGkerYr9AtzaJGgs%3D@162.159.195.1:1701?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A817c%3A6c2a%3A994a%3Afbb9%3Ad11a%2F128&reserved=138%2C214%2C244&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://uZTjJOjpaakFx93OGyr4FsRpsmEY7ChzhRC1p%2F3LzJ4%3D@162.159.193.3:2408?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8be4%3Aadb3%3A21ab%3Aa4e6%3Ae2dd%2F128&reserved=215%2C238%2C133&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
+wireguard://ugvyk5kyV8i6hllO%2FpQUZR0mDpwiijWpU%2B8apUkh0GM%3D@162.159.195.1:500?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8bb3%3A39a5%3A10d6%3A3c75%3A3d0a%2F128&reserved=249%2C232%2C246&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1420#Peyman_WG@WireVpnGuard
+
