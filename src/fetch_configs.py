@@ -172,7 +172,15 @@ class ConfigFetcher:
             channel.metrics.total_configs += len(found_configs)
             configs.extend(found_configs)
         
-        configs = list(set(configs))
+        # حذف تکراری‌ها بر اساس fingerprint به جای خود لینک
+        unique_configs = []
+        seen_in_this_channel = set()
+        for config in configs:
+            fp = ConfigValidator.get_config_fingerprint(config)
+            if fp and fp not in seen_in_this_channel:
+                seen_in_this_channel.add(fp)
+                unique_configs.append(config)
+        configs = unique_configs
         
         for config in configs[:]:
             for protocol in self.config.SUPPORTED_PROTOCOLS:
@@ -222,11 +230,11 @@ class ConfigFetcher:
                     channel.metrics.protocol_counts[protocol] = channel.metrics.protocol_counts.get(protocol, 0) + 1
                     
                     fingerprint = ConfigValidator.get_config_fingerprint(clean_config)
-                    if fingerprint not in self.seen_configs:
-                        self.seen_configs.add(fingerprint)  # نه خود لینک، بلکه fingerprint
-                        channel.metrics.unique_configs += 1
-                        processed_configs.append(clean_config)
-                        self.protocol_counts[protocol] += 1
+                                    if fingerprint not in self.seen_configs:  # ← جهانی (نه فقط کانال)
+                                        self.seen_configs.add(fingerprint)
+                                        channel.metrics.unique_configs += 1
+                                        processed_configs.append(clean_config)
+                                        self.protocol_counts[protocol] += 1
                 break
                 
         return processed_configs
