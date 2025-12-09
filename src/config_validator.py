@@ -37,12 +37,14 @@ class ConfigValidator:
             
     @staticmethod
     def get_config_fingerprint(config: str) -> str:
+        """برمی‌گرداند یک شناسه منحصربه‌فرد بر اساس سرور + پورت + پسورد/UUID"""
         config = config.strip()
         lower = config.lower()
 
         try:
             if lower.startswith(('hysteria2://', 'hy2://')):
                 config = config.replace('hy2://', 'hysteria2://')
+                from urllib.parse import urlparse
                 parsed = urlparse(config)
                 server = parsed.hostname or ''
                 port = str(parsed.port or 443)
@@ -59,11 +61,12 @@ class ConfigValidator:
                 m = re.search(r'vless://([a-f0-9-]{36})', config)
                 if not m:
                     return config.lower()
-                uuid = m.group(1)
+                uuid_val = m.group(1)
+                from urllib.parse import urlparse
                 parsed = urlparse(config)
                 server = parsed.hostname or ''
                 port = str(parsed.port or 443)
-                return f"vless:{server}:{port}:{uuid}".lower()
+                return f"vless:{server}:{port}:{uuid_val}".lower()
 
             elif lower.startswith('vmess://'):
                 import base64, json
@@ -71,12 +74,13 @@ class ConfigValidator:
                     data = json.loads(base64.b64decode(config[8:] + '==='))
                     add = data.get('add', '')
                     port = str(data.get('port', 443))
-                    id_ = data.get('id', '')
-                    return f"vmess:{add}:{port}:{id_}".lower()
+                    uid = data.get('id', '')
+                    return f"vmess:{add}:{port}:{uid}".lower()
                 except:
-                    pass
+                    return config.lower()
 
             elif lower.startswith('trojan://'):
+                from urllib.parse import urlparse
                 parsed = urlparse(config)
                 server = parsed.hostname or ''
                 port = str(parsed.port or 443)
@@ -84,21 +88,21 @@ class ConfigValidator:
                 return f"trojan:{server}:{port}:{password}".lower()
 
             elif lower.startswith('ss://'):
-                # پشتیبانی از هر دو فرمت قدیمی و 2022
-                if '@' in config[5:]:
-                    try:
-                        part_after_ss = config[5:].split('@', 1)[1]
-                        server_port = part_after_ss.split('#')[0].split('?')[0].split('/')[0]
-                        if ':' not in server_port:
-                            return config.lower()
-                        server, port = server_port.rsplit(':', 1)
-                        auth_part = config[5:].split('@')[0]
-                        if ':' in auth_part:
-                            method, password = auth_part.split(':', 1)
-                            return f"ss:{server}:{port}:{method}:{password}".lower()
-                    except:
-                        pass
-                return config.lower()
+                if '@' not in config[5:]:
+                    return config.lower()
+                try:
+                    auth_server = config[5:].split('@', 1)[1]
+                    server_port = auth_server.split('#')[0].split('?')[0].split('/')[0]
+                    if ':' not in server_port:
+                        return config.lower()
+                    server, port = server_port.rsplit(':', 1)
+                    auth_part = config[5:].split('@')[0]
+                    if ':' not in auth_part:
+                        return config.lower()
+                    method, password = auth_part.split(':', 1)
+                    return f"ss:{server}:{port}:{method}:{password}".lower()
+                except:
+                    return config.lower()
 
             return config.lower()
         except:
