@@ -20,14 +20,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-self.seen_configs: Set[str] = set()  # ← الان set[str] از نوع fingerprint
-
 class ConfigFetcher:
     def __init__(self, config: ProxyConfig):
         self.config = config
         self.validator = ConfigValidator()
         self.protocol_counts: Dict[str, int] = {p: 0 for p in config.SUPPORTED_PROTOCOLS}
-        self.seen_configs: Set[str] = set()
+        self.seen_configs: Set[str] = set() 
         self.channel_protocol_counts: Dict[str, Dict[str, int]] = {}
         self.session = requests.Session()
         self.session.headers.update(config.HEADERS)
