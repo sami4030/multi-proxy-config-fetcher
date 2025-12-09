@@ -90,63 +90,62 @@ class ConfigToSingbox:
 
     # ==================== Hysteria2 (با obfs کامل) ====================
     def parse_hysteria2(self, config: str) -> Optional[Dict]:
-    try:
-        config = config.strip()
-        if config.lower().startswith('hy2://'):
-            config = config.replace('hy2://', 'hysteria2://', 1)
+        try:
+            config = config.strip()
+            if config.lower().startswith('hy2://'):
+                config = config.replace('hy2://', 'hysteria2://', 1)
 
-        url = urlparse(config)
-        if url.scheme != 'hysteria2' or not url.hostname or not url.port:
-            return None
+            url = urlparse(config)
+            if url.scheme != 'hysteria2' or not url.hostname or not url.port:
+                return None
 
-        # ✅ فیکس جدید: normalize &amp; به & برای تلگرام/وب
-        query_normalized = url.query.replace('&amp;', '&')
-        params = parse_qs(query_normalized)
+            # فیکس مهم: تبدیل &amp; → & (مشکل تلگرام و وب)
+            query_normalized = url.query.replace('&amp;', '&').replace('&amp;amp;', '&')
+            params = parse_qs(query_normalized)
 
-        # اولویت: obfs-password → password → username
-        obfs_password = params.get('obfs-password', [''])[0]
-        main_password = (
-            params.get('password', [''])[0] or
-            url.username or
-            ''
-        )
+            # استخراج جداگانه password اصلی و obfs-password
+            main_password = params.get('password', [''])[0] or url.username or ''
+            obfs_password = params.get('obfs-password', [''])[0]
+            obfs_type = params.get('obfs', [''])[0]
 
-        if not main_password and not obfs_password:
-            return None
+            if not main_password and not obfs_password:
+                return None
 
-        sni = (
-            params.get('sni', [''])[0] or
-            params.get('peer', [url.hostname])[0] or
-            url.hostname
-        )
+            sni = (
+                params.get('sni', [''])[0] or
+                params.get('peer', [''])[0] or
+                url.hostname
+            )
 
-        result = {
-            "address": url.hostname,
-            "port": url.port,
-            "password": main_password or obfs_password,  # اگر main نباشه، obfs رو به main بده
-            "sni": sni,
-        }
-
-        # obfs فقط اگر type و password داشته باشه
-        obfs_type = params.get('obfs', [''])[0]
-        if obfs_type and obfs_password:
-            result["obfs"] = {
-                "type": obfs_type,
-                "password": obfs_password
+            result = {
+                "address": url.hostname,
+                "port": url.port,
+                "password": main_password or obfs_password,  # حداقل یکی باشه
+                "sni": sni,
             }
 
-        # insecure
-        insecure = params.get('insecure', ['0'])[0] in ['1', 'true', 'yes']
-        result["tls"] = {
-            "enabled": True,
-            "server_name": sni,
-            "insecure": insecure
-        }
+            # فقط وقتی obfs واقعاً فعاله اضافه کن
+            if obfs_type and obfs_password:
+                result["obfs"] = {
+                    "type": obfs_type,
+                    "password": obfs_password
+                }
 
-        return result
-    except Exception as e:
-        print(f"Hysteria2 parse error: {config[:60]}... → {e}")
-        return None
+            # insecure
+            insecure_val = params.get('insecure', ['0'])[0]
+            insecure = insecure_val in ('1', 'true', 'yes', 'True')
+
+            result["tls"] = {
+                "enabled": True,
+                "server_name": sni,
+                "insecure": insecure
+            }
+
+            return result
+
+        except Exception as e:
+            print(f"[Hysteria2 Error] {config[:70]}... → {e}")
+            return None
 
     # ==================== Shadowsocks (قدیمی + 2022) ====================
     def parse_shadowsocks(self, config: str) -> Optional[Dict]:
