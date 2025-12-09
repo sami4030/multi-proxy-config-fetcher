@@ -37,69 +37,70 @@ class ConfigValidator:
             
     @staticmethod
     def get_config_fingerprint(config: str) -> str:
-        """
-        برگرداندن یک شناسه منحصر به فرد برای هر کانفیگ بر اساس کلید اتصال
-        مثال خروجی: "hysteria2:91.99.225.11:443:EXFdk0goSh"
-                      "vless:1.1.1.1:8443:abcd1234-..."
-                      "vmess:8.8.8.8:443:uuid1234"
-        """
-        try:
-            config = config.strip()
-            lower = config.lower()
+        config = config.strip()
+        lower = config.lower()
 
+        try:
             if lower.startswith(('hysteria2://', 'hy2://')):
-                # hysteria2://pass@ip:port یا hysteria2://obfs-pass@ip:port?obfs-password=xxx
-                parsed = urlparse(config.replace('hy2://', 'hysteria2://'))
+                config = config.replace('hy2://', 'hysteria2://')
+                parsed = urlparse(config)
                 server = parsed.hostname or ''
                 port = str(parsed.port or 443)
-                # پسورد اصلی از username یا obfs-password
                 password = parsed.username or ''
-                if not password and 'obfs-password' in config:
+                if not password:
                     import re
-                    m = re.search(r'obfs-password=([^&\'"\s>]+)', config)
+                    m = re.search(r'[?&]obfs-password=([^&\'"\s>#]+)', config, re.I)
                     if m:
                         password = m.group(1)
-                return f"hysteria2:{server}:{port}:{password}".lower()
+                return f"hy2:{server}:{port}:{password}".lower()
 
             elif lower.startswith('vless://'):
-                import uuid as uuid_lib
+                import re
+                m = re.search(r'vless://([a-f0-9-]{36})', config)
+                if not m:
+                    return config.lower()
+                uuid = m.group(1)
                 parsed = urlparse(config)
-                uuid_match = parsed.username or re.search(r'vless://([a-f0-9-]{36})', config)
-                if uuid_match:
-                    uuid_val = uuid_match.group(1) if hasattr(uuid_match, 'group') else uuid_match
-                    server = parsed.hostname or ''
-                    port = str(parsed.port or 443)
-                    return f"vless:{server}:{port}:{uuid_val}".lower()
+                server = parsed.hostname or ''
+                port = str(parsed.port or 443)
+                return f"vless:{server}:{port}:{uuid}".lower()
 
             elif lower.startswith('vmess://'):
-                import json, base64
+                import base64, json
                 try:
                     data = json.loads(base64.b64decode(config[8:] + '==='))
-                    return f"vmess:{data.get('add','')}:{data.get('port',443)}:{data.get('id','')}".lower()
+                    add = data.get('add', '')
+                    port = str(data.get('port', 443))
+                    id_ = data.get('id', '')
+                    return f"vmess:{add}:{port}:{id_}".lower()
                 except:
-                    return config.lower()  # fallback
+                    pass
 
             elif lower.startswith('trojan://'):
                 parsed = urlparse(config)
-                password = parsed.username or ''
                 server = parsed.hostname or ''
                 port = str(parsed.port or 443)
-                return f"trojan:{server}:{port}:{port}:{password}".lower()
+                password = parsed.username or ''
+                return f"trojan:{server}:{port}:{password}".lower()
 
             elif lower.startswith('ss://'):
-                # ss://method:pass@server:port یا جدیدتر
+                # پشتیبانی از هر دو فرمت قدیمی و 2022
                 if '@' in config[5:]:
-                    part = config.split('@', 1)[1].split('#')[0].split('?')[0]
-                    server_port = part.split('/')[0]
-                    if ':' in server_port:
+                    try:
+                        part_after_ss = config[5:].split('@', 1)[1]
+                        server_port = part_after_ss.split('#')[0].split('?')[0].split('/')[0]
+                        if ':' not in server_port:
+                            return config.lower()
                         server, port = server_port.rsplit(':', 1)
-                        method_pass = config[5:].split('@')[0]
-                        if ':' in method_pass:
-                            method, password = method_pass.split(':', 1)
+                        auth_part = config[5:].split('@')[0]
+                        if ':' in auth_part:
+                            method, password = auth_part.split(':', 1)
                             return f"ss:{server}:{port}:{method}:{password}".lower()
+                    except:
+                        pass
                 return config.lower()
 
-            return config.lower()  # fallback
+            return config.lower()
         except:
             return config.lower()
 
