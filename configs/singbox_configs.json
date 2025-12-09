@@ -1,655 +1,698 @@
 {
+  "log": {
+    "level": "warn"
+  },
   "dns": {
-    "final": "local-dns",
-    "rules": [
-      {
-        "clash_mode": "Global",
-        "server": "proxy-dns",
-        "source_ip_cidr": [
-          "172.19.0.0/30"
-        ]
-      },
-      {
-        "server": "proxy-dns",
-        "source_ip_cidr": [
-          "172.19.0.0/30"
-        ]
-      },
-      {
-        "clash_mode": "Direct",
-        "server": "direct-dns"
-      }
-    ],
     "servers": [
       {
-        "address": "tls://208.67.222.123",
-        "address_resolver": "local-dns",
-        "detour": "proxy",
-        "tag": "proxy-dns"
+        "tag": "proxy-dns",
+        "address": "tls://1.1.1.1",
+        "detour": "proxy"
       },
       {
+        "tag": "local-dns",
         "address": "local",
-        "detour": "direct",
-        "tag": "local-dns"
+        "detour": "direct"
       },
       {
-        "address": "rcode://success",
-        "tag": "block"
-      },
-      {
-        "address": "local",
-        "detour": "direct",
-        "tag": "direct-dns"
+        "tag": "block",
+        "address": "rcode://refused"
       }
     ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "local-dns"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "proxy-dns"
+      }
+    ],
+    "final": "proxy-dns",
     "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {
-      "address": [
-        "172.19.0.1/30",
-        "fdfe:dcba:9876::1/126"
-      ],
-      "auto_route": true,
-      "endpoint_independent_nat": false,
+      "type": "tun",
+      "inet4_address": "172.19.0.1/30",
+      "inet6_address": "fdfe:dcba:9876::1/126",
       "mtu": 9000,
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 2080
-        }
-      },
+      "auto_route": true,
+      "strict_route": true,
       "sniff": true,
-      "stack": "system",
-      "strict_route": false,
-      "type": "tun"
+      "stack": "system"
     },
     {
+      "type": "mixed",
       "listen": "127.0.0.1",
       "listen_port": 2080,
-      "sniff": true,
-      "type": "mixed",
-      "users": []
+      "sniff": true
     }
   ],
   "outbounds": [
     {
-      "tag": "proxy",
       "type": "selector",
+      "tag": "Proxy",
       "outbounds": [
-        "auto",
-        "🇩🇪 hysteria2-0fea05e8 (Germany)",
-        "🇩🇪 hysteria2-00d880f6 (Germany)",
-        "🇩🇪 hysteria2-54e1b36b (Germany)",
-        "🇩🇪 hysteria2-a0e7f21c (Germany)",
-        "🇩🇪 hysteria2-a7cb38aa (Germany)",
-        "🇩🇪 hysteria2-1b3855f3 (Germany)",
-        "🇩🇪 hysteria2-0da01cd6 (Germany)",
-        "🇩🇪 hysteria2-c5b1ef95 (Germany)",
-        "🇩🇪 hysteria2-4d0aa5f3 (Germany)",
-        "🇩🇪 hysteria2-48cc2341 (Germany)",
-        "🇷🇺 hysteria2-0bb6a141 (Russia)",
-        "🇷🇺 hysteria2-2e7eb625 (Russia)",
-        "🇷🇺 hysteria2-f1351ca4 (Russia)",
-        "🇷🇺 hysteria2-e5c98027 (Russia)",
-        "🇷🇺 hysteria2-65db6f6e (Russia)",
-        "🇷🇺 hysteria2-fc4ccdc3 (Russia)",
-        "🇷🇺 hysteria2-d9f376eb (Russia)",
-        "🇳🇱 hysteria2-e77889fd (The Netherlands)",
-        "🇳🇱 hysteria2-d83e543f (The Netherlands)",
-        "🇳🇱 hysteria2-f309dd9a (The Netherlands)",
-        "🇳🇱 hysteria2-3455ab5a (The Netherlands)",
-        "🇳🇱 hysteria2-ca83ba72 (The Netherlands)",
-        "🇳🇱 hysteria2-a8d10303 (The Netherlands)",
-        "🇩🇪 hysteria2-c184a642 (Germany)",
-        "🇩🇪 hysteria2-8e65a2a3 (Germany)",
-        "🇩🇪 hysteria2-70be74d9 (Germany)",
-        "🇩🇪 hysteria2-2a2daaed (Germany)",
-        "🇩🇪 hysteria2-36b5bba9 (Germany)",
-        "🇩🇪 hysteria2-18d534cb (Germany)",
-        "🇩🇪 vless-c02213db (Germany)",
-        "🇩🇪 vless-a4bca32f (Germany)",
-        "🇨🇿 vless-d4f29f56 (Czechia)",
-        "🇷🇺 vless-3049a103 (Russia)",
-        "🇧🇬 vless-0add804b (Bulgaria)",
-        "🇧🇬 vless-52f880c6 (Bulgaria)",
-        "🇮🇪 vless-15c5e028 (Ireland)",
-        "🇩🇪 vmess-6c2a690f (Germany)",
-        "direct"
+        "Auto",
+        "🇩🇪 Hy2 6b1d (Germany)",
+        "🇩🇪 Hy2 64a7 (Germany)",
+        "🇩🇪 Hy2 c3ba (Germany)",
+        "🇩🇪 Hy2 6aa9 (Germany)",
+        "🇩🇪 Hy2 ad78 (Germany)",
+        "🇩🇪 Hy2 7901 (Germany)",
+        "🇩🇪 Hy2 fd89 (Germany)",
+        "🇩🇪 Hy2 e1c1 (Germany)",
+        "🇩🇪 Hy2 2b9b (Germany)",
+        "🇩🇪 Hy2 8cc6 (Germany)",
+        "🇷🇺 Hy2 ffba (Russia)",
+        "🇷🇺 Hy2 ec1d (Russia)",
+        "🇷🇺 Hy2 b152 (Russia)",
+        "🇷🇺 Hy2 4bce (Russia)",
+        "🇷🇺 Hy2 b854 (Russia)",
+        "🇷🇺 Hy2 89aa (Russia)",
+        "🇷🇺 Hy2 169f (Russia)",
+        "🇳🇱 Hy2 d7ff (The Netherlands)",
+        "🇳🇱 Hy2 c90f (The Netherlands)",
+        "🇳🇱 Hy2 a1c4 (The Netherlands)",
+        "🇳🇱 Hy2 67f0 (The Netherlands)",
+        "🇳🇱 Hy2 a57f (The Netherlands)",
+        "🇳🇱 Hy2 a7af (The Netherlands)",
+        "🇩🇪 Hy2 934a (Germany)",
+        "🇩🇪 Hy2 30c0 (Germany)",
+        "🇩🇪 Hy2 601e (Germany)",
+        "🇩🇪 Hy2 94a7 (Germany)",
+        "🇩🇪 Hy2 8c7b (Germany)",
+        "🇩🇪 Hy2 f18d (Germany)",
+        "🇩🇪 VL c7df (Germany)",
+        "🇩🇪 VL 2d2c (Germany)",
+        "🇨🇿 VL 52af (Czechia)",
+        "🇷🇺 VL 12bd (Russia)",
+        "🇧🇬 VL ae3a (Bulgaria)",
+        "🇧🇬 VL 4017 (Bulgaria)",
+        "🇮🇪 VL 3efa (Ireland)",
+        "Direct"
       ]
     },
     {
-      "tag": "auto",
       "type": "urltest",
+      "tag": "Auto",
       "outbounds": [
-        "🇩🇪 hysteria2-0fea05e8 (Germany)",
-        "🇩🇪 hysteria2-00d880f6 (Germany)",
-        "🇩🇪 hysteria2-54e1b36b (Germany)",
-        "🇩🇪 hysteria2-a0e7f21c (Germany)",
-        "🇩🇪 hysteria2-a7cb38aa (Germany)",
-        "🇩🇪 hysteria2-1b3855f3 (Germany)",
-        "🇩🇪 hysteria2-0da01cd6 (Germany)",
-        "🇩🇪 hysteria2-c5b1ef95 (Germany)",
-        "🇩🇪 hysteria2-4d0aa5f3 (Germany)",
-        "🇩🇪 hysteria2-48cc2341 (Germany)",
-        "🇷🇺 hysteria2-0bb6a141 (Russia)",
-        "🇷🇺 hysteria2-2e7eb625 (Russia)",
-        "🇷🇺 hysteria2-f1351ca4 (Russia)",
-        "🇷🇺 hysteria2-e5c98027 (Russia)",
-        "🇷🇺 hysteria2-65db6f6e (Russia)",
-        "🇷🇺 hysteria2-fc4ccdc3 (Russia)",
-        "🇷🇺 hysteria2-d9f376eb (Russia)",
-        "🇳🇱 hysteria2-e77889fd (The Netherlands)",
-        "🇳🇱 hysteria2-d83e543f (The Netherlands)",
-        "🇳🇱 hysteria2-f309dd9a (The Netherlands)",
-        "🇳🇱 hysteria2-3455ab5a (The Netherlands)",
-        "🇳🇱 hysteria2-ca83ba72 (The Netherlands)",
-        "🇳🇱 hysteria2-a8d10303 (The Netherlands)",
-        "🇩🇪 hysteria2-c184a642 (Germany)",
-        "🇩🇪 hysteria2-8e65a2a3 (Germany)",
-        "🇩🇪 hysteria2-70be74d9 (Germany)",
-        "🇩🇪 hysteria2-2a2daaed (Germany)",
-        "🇩🇪 hysteria2-36b5bba9 (Germany)",
-        "🇩🇪 hysteria2-18d534cb (Germany)",
-        "🇩🇪 vless-c02213db (Germany)",
-        "🇩🇪 vless-a4bca32f (Germany)",
-        "🇨🇿 vless-d4f29f56 (Czechia)",
-        "🇷🇺 vless-3049a103 (Russia)",
-        "🇧🇬 vless-0add804b (Bulgaria)",
-        "🇧🇬 vless-52f880c6 (Bulgaria)",
-        "🇮🇪 vless-15c5e028 (Ireland)",
-        "🇩🇪 vmess-6c2a690f (Germany)"
+        "🇩🇪 Hy2 6b1d (Germany)",
+        "🇩🇪 Hy2 64a7 (Germany)",
+        "🇩🇪 Hy2 c3ba (Germany)",
+        "🇩🇪 Hy2 6aa9 (Germany)",
+        "🇩🇪 Hy2 ad78 (Germany)",
+        "🇩🇪 Hy2 7901 (Germany)",
+        "🇩🇪 Hy2 fd89 (Germany)",
+        "🇩🇪 Hy2 e1c1 (Germany)",
+        "🇩🇪 Hy2 2b9b (Germany)",
+        "🇩🇪 Hy2 8cc6 (Germany)",
+        "🇷🇺 Hy2 ffba (Russia)",
+        "🇷🇺 Hy2 ec1d (Russia)",
+        "🇷🇺 Hy2 b152 (Russia)",
+        "🇷🇺 Hy2 4bce (Russia)",
+        "🇷🇺 Hy2 b854 (Russia)",
+        "🇷🇺 Hy2 89aa (Russia)",
+        "🇷🇺 Hy2 169f (Russia)",
+        "🇳🇱 Hy2 d7ff (The Netherlands)",
+        "🇳🇱 Hy2 c90f (The Netherlands)",
+        "🇳🇱 Hy2 a1c4 (The Netherlands)",
+        "🇳🇱 Hy2 67f0 (The Netherlands)",
+        "🇳🇱 Hy2 a57f (The Netherlands)",
+        "🇳🇱 Hy2 a7af (The Netherlands)",
+        "🇩🇪 Hy2 934a (Germany)",
+        "🇩🇪 Hy2 30c0 (Germany)",
+        "🇩🇪 Hy2 601e (Germany)",
+        "🇩🇪 Hy2 94a7 (Germany)",
+        "🇩🇪 Hy2 8c7b (Germany)",
+        "🇩🇪 Hy2 f18d (Germany)",
+        "🇩🇪 VL c7df (Germany)",
+        "🇩🇪 VL 2d2c (Germany)",
+        "🇨🇿 VL 52af (Czechia)",
+        "🇷🇺 VL 12bd (Russia)",
+        "🇧🇬 VL ae3a (Bulgaria)",
+        "🇧🇬 VL 4017 (Bulgaria)",
+        "🇮🇪 VL 3efa (Ireland)"
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+      "interval": "5m",
+      "tolerance": 100
     },
     {
-      "tag": "direct",
-      "type": "direct"
+      "type": "direct",
+      "tag": "Direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-0fea05e8 (Germany)",
+      "tag": "🇩🇪 Hy2 6b1d (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-00d880f6 (Germany)",
+      "tag": "🇩🇪 Hy2 64a7 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-54e1b36b (Germany)",
+      "tag": "🇩🇪 Hy2 c3ba (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-a0e7f21c (Germany)",
+      "tag": "🇩🇪 Hy2 6aa9 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-a7cb38aa (Germany)",
+      "tag": "🇩🇪 Hy2 ad78 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-1b3855f3 (Germany)",
+      "tag": "🇩🇪 Hy2 7901 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-0da01cd6 (Germany)",
+      "tag": "🇩🇪 Hy2 fd89 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-c5b1ef95 (Germany)",
+      "tag": "🇩🇪 Hy2 e1c1 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-4d0aa5f3 (Germany)",
+      "tag": "🇩🇪 Hy2 2b9b (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-48cc2341 (Germany)",
+      "tag": "🇩🇪 Hy2 8cc6 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "password": "Jsbdksj@V2RayyNGvpn$Miracle",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "refersion.com"
+        "server_name": "refersion.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 hysteria2-0bb6a141 (Russia)",
+      "tag": "🇷🇺 Hy2 ffba (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "gazprombank.ru"
+        "server_name": "gazprombank.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 hysteria2-2e7eb625 (Russia)",
+      "tag": "🇷🇺 Hy2 ec1d (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "gazprombank.ru"
+        "server_name": "gazprombank.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 hysteria2-f1351ca4 (Russia)",
+      "tag": "🇷🇺 Hy2 b152 (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "gazprombank.ru"
+        "server_name": "gazprombank.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 hysteria2-e5c98027 (Russia)",
+      "tag": "🇷🇺 Hy2 4bce (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "gazprombank.ru"
+        "server_name": "gazprombank.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 hysteria2-65db6f6e (Russia)",
+      "tag": "🇷🇺 Hy2 b854 (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "gazprombank.ru"
+        "server_name": "gazprombank.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 hysteria2-fc4ccdc3 (Russia)",
+      "tag": "🇷🇺 Hy2 89aa (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "gazprombank.ru"
+        "server_name": "gazprombank.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 hysteria2-d9f376eb (Russia)",
+      "tag": "🇷🇺 Hy2 169f (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "gazprombank.ru"
+        "server_name": "gazprombank.ru",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 hysteria2-e77889fd (The Netherlands)",
+      "tag": "🇳🇱 Hy2 d7ff (The Netherlands)",
       "server": "206.71.158.37",
       "server_port": 35000,
       "password": "Yet-Another-Public-Config-1",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "YAPC-1.afshin.ir"
+        "server_name": "YAPC-1.afshin.ir",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 hysteria2-d83e543f (The Netherlands)",
+      "tag": "🇳🇱 Hy2 c90f (The Netherlands)",
       "server": "206.71.158.37",
       "server_port": 35000,
       "password": "Yet-Another-Public-Config-1",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "YAPC-1.afshin.ir"
+        "server_name": "YAPC-1.afshin.ir",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 hysteria2-f309dd9a (The Netherlands)",
+      "tag": "🇳🇱 Hy2 a1c4 (The Netherlands)",
       "server": "206.71.158.37",
       "server_port": 35000,
       "password": "Yet-Another-Public-Config-1",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "YAPC-1.afshin.ir"
+        "server_name": "YAPC-1.afshin.ir",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 hysteria2-3455ab5a (The Netherlands)",
+      "tag": "🇳🇱 Hy2 67f0 (The Netherlands)",
       "server": "206.71.158.37",
       "server_port": 35200,
       "password": "Yet-Another-Public-Config-1",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "YAPC-1.afshin.ir"
+        "server_name": "YAPC-1.afshin.ir",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 hysteria2-ca83ba72 (The Netherlands)",
+      "tag": "🇳🇱 Hy2 a57f (The Netherlands)",
       "server": "206.71.158.40",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "api.kermanshahi.org"
+        "server_name": "api.kermanshahi.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 hysteria2-a8d10303 (The Netherlands)",
+      "tag": "🇳🇱 Hy2 a7af (The Netherlands)",
       "server": "206.71.158.40",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "api.kermanshahi.org"
+        "server_name": "api.kermanshahi.org",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-c184a642 (Germany)",
+      "tag": "🇩🇪 Hy2 934a (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "jnir.pichondan.com"
+        "server_name": "jnir.pichondan.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-8e65a2a3 (Germany)",
+      "tag": "🇩🇪 Hy2 30c0 (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "jnir.pichondan.com"
+        "server_name": "jnir.pichondan.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-70be74d9 (Germany)",
+      "tag": "🇩🇪 Hy2 601e (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "api.kermanshahi.org"
+        "server_name": "api.kermanshahi.org",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-2a2daaed (Germany)",
+      "tag": "🇩🇪 Hy2 94a7 (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "api.kermanshahi.org"
+        "server_name": "api.kermanshahi.org",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-36b5bba9 (Germany)",
+      "tag": "🇩🇪 Hy2 8c7b (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "jnir.pichondan.com"
+        "server_name": "jnir.pichondan.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 hysteria2-18d534cb (Germany)",
+      "tag": "🇩🇪 Hy2 f18d (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "jnir.pichondan.com"
+        "server_name": "jnir.pichondan.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 vless-c02213db (Germany)",
+      "tag": "🇩🇪 VL c7df (Germany)",
       "server": "91.107.174.82",
       "server_port": 3002,
       "uuid": "4fbf976a-ecff-42e6-a100-0436ef96ee46",
-      "flow": "",
+      "flow": null,
       "tls": {
         "enabled": true,
         "server_name": "91.107.174.82",
-        "insecure": true
+        "insecure": false
       },
-      "transport": {}
+      "transport": null
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 vless-a4bca32f (Germany)",
+      "tag": "🇩🇪 VL 2d2c (Germany)",
       "server": "88.99.184.17",
       "server_port": 30351,
       "uuid": "74e30d16-8922-48dc-ac2e-9be47e8e968c",
-      "flow": "",
+      "flow": null,
       "tls": {
         "enabled": true,
         "server_name": "88.99.184.17",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
-        "path": "/",
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 vless-d4f29f56 (Czechia)",
+      "tag": "🇨🇿 VL 52af (Czechia)",
       "server": "node.svoy.run",
       "server_port": 443,
       "uuid": "7e281f58-63b0-4e9a-a3fe-537e33e374b9",
       "flow": "xtls-rprx-vision",
       "tls": {
-        "enabled": true,
+        "enabled": false,
         "server_name": "www.cloudflare.com",
-        "insecure": true
+        "insecure": false
       },
-      "transport": {}
+      "transport": null
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 vless-3049a103 (Russia)",
+      "tag": "🇷🇺 VL 12bd (Russia)",
       "server": "217.16.24.170",
       "server_port": 443,
       "uuid": "a91e64f0-9295-499d-bf4a-661ad99d4938",
       "flow": "xtls-rprx-vision",
       "tls": {
-        "enabled": true,
+        "enabled": false,
         "server_name": "api-maps.yandex.ru",
-        "insecure": true
+        "insecure": false
       },
-      "transport": {}
+      "transport": null
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 vless-0add804b (Bulgaria)",
+      "tag": "🇧🇬 VL ae3a (Bulgaria)",
       "server": "141.227.178.242",
       "server_port": 29803,
       "uuid": "aa4f8c93-e4ec-48fe-8043-2f8e4f1c006d",
-      "flow": "",
+      "flow": null,
       "tls": {
         "enabled": true,
         "server_name": "141.227.178.242",
-        "insecure": true
+        "insecure": false
       },
-      "transport": {}
+      "transport": null
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 vless-52f880c6 (Bulgaria)",
+      "tag": "🇧🇬 VL 4017 (Bulgaria)",
       "server": "141.227.178.242",
       "server_port": 29803,
       "uuid": "aa4f8c93-e4ec-48fe-8043-2f8e4f1c006d",
-      "flow": "",
+      "flow": null,
       "tls": {
-        "enabled": true,
+        "enabled": false,
         "server_name": "141.227.178.242",
-        "insecure": true
+        "insecure": false
       },
-      "transport": {}
+      "transport": null
     },
     {
       "type": "vless",
-      "tag": "🇮🇪 vless-15c5e028 (Ireland)",
+      "tag": "🇮🇪 VL 3efa (Ireland)",
       "server": "141.227.162.151",
       "server_port": 33921,
       "uuid": "e6616708-1d44-40ba-9ce3-167f57353b4b",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "141.227.162.151",
-        "insecure": true
-      },
-      "transport": {}
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 vmess-6c2a690f (Germany)",
-      "server": "a.confignor.site",
-      "server_port": 7443,
-      "uuid": "65057eba-d0ba-4903-96f9-f7e2569ab58b",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {},
+      "flow": null,
       "tls": {
         "enabled": false,
-        "insecure": true,
-        "server_name": "www.microsoft.com"
-      }
+        "server_name": "141.227.162.151",
+        "insecure": false
+      },
+      "transport": null
     }
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "proxy",
-    "rules": [
-      {
-        "clash_mode": "Direct",
-        "outbound": "direct"
-      },
-      {
-        "clash_mode": "Global",
-        "outbound": "proxy"
-      },
-      {
-        "protocol": "dns",
-        "action": "hijack-dns"
-      }
-    ]
+    "final": "Proxy"
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    }
   }
 }
