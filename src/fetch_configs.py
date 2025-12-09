@@ -20,6 +20,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+self.seen_configs: Set[str] = set()  # ← الان set[str] از نوع fingerprint
+
 class ConfigFetcher:
     def __init__(self, config: ProxyConfig):
         self.config = config
@@ -219,9 +221,10 @@ class ConfigFetcher:
                     channel.metrics.valid_configs += 1
                     channel.metrics.protocol_counts[protocol] = channel.metrics.protocol_counts.get(protocol, 0) + 1
                     
-                    if clean_config not in self.seen_configs:
+                    fingerprint = ConfigValidator.get_config_fingerprint(clean_config)
+                    if fingerprint not in self.seen_configs:
+                        self.seen_configs.add(fingerprint)  # نه خود لینک، بلکه fingerprint
                         channel.metrics.unique_configs += 1
-                        self.seen_configs.add(clean_config)
                         processed_configs.append(clean_config)
                         self.protocol_counts[protocol] += 1
                 break
