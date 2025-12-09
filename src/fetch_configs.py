@@ -174,12 +174,12 @@ class ConfigFetcher:
         
         # حذف تکراری‌ها بر اساس fingerprint به جای خود لینک
         unique_configs = []
-        seen_in_this_channel = set()
-        for config in configs:
-            fp = ConfigValidator.get_config_fingerprint(config)
-            if fp and fp not in seen_in_this_channel:
-                seen_in_this_channel.add(fp)
-                unique_configs.append(config)
+        seen_in_channel = set()
+        for cfg in configs:
+            fp = ConfigValidator.get_config_fingerprint(cfg)
+            if fp and fp not in seen_in_channel:
+                seen_in_channel.add(fp)
+                unique_configs.append(cfg)
         configs = unique_configs
         
         for config in configs[:]:
@@ -201,42 +201,50 @@ class ConfigFetcher:
 
     def process_config(self, config: str, channel: ChannelConfig) -> List[str]:
         processed_configs = []
-        
+
         if config.startswith('hy2://'):
             config = self.validator.normalize_hysteria2_protocol(config)
-            
+
         for protocol in self.config.SUPPORTED_PROTOCOLS:
             aliases = self.config.SUPPORTED_PROTOCOLS[protocol].get('aliases', [])
             protocol_match = False
-            
+
             if config.startswith(protocol):
                 protocol_match = True
             else:
                 for alias in aliases:
                     if config.startswith(alias):
-                        protocol_match = True
                         config = config.replace(alias, protocol, 1)
+                        protocol_match = True
                         break
-                        
-            if protocol_match:
-                if not self.config.is_protocol_enabled(protocol):
-                    break
-                if protocol == "vmess://":
-                    config = self.validator.clean_vmess_config(config)
-                
-                clean_config = self.validator.clean_config(config)
-                if self.validator.validate_protocol_config(clean_config, protocol):
-                    channel.metrics.valid_configs += 1
-                    channel.metrics.protocol_counts[protocol] = channel.metrics.protocol_counts.get(protocol, 0) + 1
-                    
-                    fingerprint = ConfigValidator.get_config_fingerprint(clean_config)
-                                    if fingerprint not in self.seen_configs:  # ← جهانی (نه فقط کانال)
-                                        self.seen_configs.add(fingerprint)
-                                        channel.metrics.unique_configs += 1
-                                        processed_configs.append(clean_config)
-                                        self.protocol_counts[protocol] += 1
-                break
-                
+
+            if not protocol_match:
+                continue
+
+            if not self.config.is_protocol_enabled(protocol):
+                continue
+
+            if protocol == "vmess://":
+                config = self.validator.clean_vmess_config(config)
+
+            clean_config = self.validator.clean_config(config)
+
+            if not self.validator.validate_protocol_config(clean_config, protocol):
+                continue
+
+            # اینجا مهم است: از fingerprint استفاده کن نه خود لینک
+            fingerprint = ConfigValidator.get_config_fingerprint(clean_config)
+
+            if fingerprint not in self.seen_configs:
+                self.seen_configs.add(fingerprint)
+                channel.metrics.valid_configs += 1
+                channel.metrics.unique_configs += 1
+                channel.metrics.protocol_counts[protocol] = channel.metrics.protocol_counts.get(protocol, 0) + 1
+                processed_configs.append(clean_config)
+                self.protocol_counts[protocol] += 1
+
+            break  # فقط یک پروتکل مچ بشه کافیه
+
         return processed_configs
 
     def extract_date_from_message(self, message) -> Optional[datetime]:
