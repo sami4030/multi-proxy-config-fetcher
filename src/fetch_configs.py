@@ -94,15 +94,11 @@ class ConfigFetcher:
         channel.metrics.valid_configs = 0
         channel.metrics.unique_configs = 0
         channel.metrics.protocol_counts = {p: 0 for p in self.config.SUPPORTED_PROTOCOLS}
-        
+
         start_time = time.time()
-        
+
         if channel.url.startswith('ssconf://'):
             configs.extend(self.fetch_ssconf_configs(channel.url))
-            if configs:
-                response_time = time.time() - start_time
-                self.config.update_channel_stats(channel, True, response_time)
-            return configs
 
         response = self.fetch_with_retry(channel.url)
         if not response:
@@ -110,67 +106,38 @@ class ConfigFetcher:
             return configs
 
         response_time = time.time() - start_time
-        
-        if channel.is_telegram:
-            soup = BeautifulSoup(response.text, 'html.parser')
-            messages = soup.find_all('div', class_='tgme_widget_message_text')
-            
-            sorted_messages = sorted(
-                messages,
-                key=lambda message: self.extract_date_from_message(message) or datetime.min.replace(tzinfo=timezone.utc),
-                reverse=True
-            )
-            
-            for message in sorted_messages:
-                if not message or not message.text:
-                    continue
-                
-                message_date = self.extract_date_from_message(message)
-                if not self.is_config_valid(message.text, message_date):
-                    continue
-                
-                text = message.text
-                text_parts = text.split()
-                
-                for part in text_parts:
-                    part = part.strip()
-                    if not part:
-                        continue
-                        
-                    if part.startswith('ssconf://'):
-                        ssconf_configs = self.fetch_ssconf_configs(part)
-                        configs.extend(ssconf_configs)
-                        channel.metrics.total_configs += len(ssconf_configs)
-                    else:
-                        decoded_part = self.check_and_decode_base64(part)
-                        if decoded_part != part:
-                            found_configs = self.validator.split_configs(decoded_part)
-                            channel.metrics.total_configs += len(found_configs)
-                            configs.extend(found_configs)
-                
-                found_configs = self.validator.split_configs(text)
-                channel.metrics.total_configs += len(found_configs)
-                configs.extend(found_configs)
-        else:
-            text = response.text
-            text_parts = text.split()
-            
-            for part in text_parts:
-                part = part.strip()
-                if not part:
-                    continue
-                    
-                decoded_part = self.check_and_decode_base64(part)
-                if decoded_part != part:
-                    found_configs = self.validator.split_configs(decoded_part)
-                    channel.metrics.total_configs += len(found_configs)
-                    configs.extend(found_configs)
-            
-            found_configs = self.validator.split_configs(text)
-            channel.metrics.total_configs += len(found_configs)
-            configs.extend(found_configs)
-        
-        # حذف تکراری‌ها بر اساس fingerprint به جای خود لینک
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # همه پیام‌های کانال رو بگیر (حتی پیام‌های پین شده)
+        messages = soup.find_all('div', class_='tgme_widget_message')
+
+        for message in messages:
+            text = message.get_text(separator='\n')  # این مهمه! جداکننده خط جدید
+
+            # اگر پیام تاریخ داشته باشه، چک کن قدیمی نباشه
+            message_date = self.extract_date_from_message(message)
+            if not self.is_config_valid(text, message_date):
+                continue
+
+            # همه لینک‌های ممکن رو از متن بگیر (حتی داخل کدبلاک یا متن معمولی)
+            potential_links = re.findall(r'[a-zA-Z0-9+/_-]+://[^\s<>"\']+', text)
+            for link in potential_links:
+                link = link.strip()
+                if any(link.startswith(proto) for proto in self.config.SUPPORTED_PROTOCOLS):
+                    configs.append(link)
+                elif link.startswith('ssconf://'):
+                    configs.extend(self.fetch_ssconf_configs(link))
+
+            # اگر base64 بود، دیکد کن
+            if self.validator.is_base64(text.strip()):
+                decoded = self.validator.decode_base64_text(text.strip())
+                if decoded:
+                    configs.extend(self.validator.split_configs(decoded))
+
+            # اگر متن معمولی بود، همه پروکسی‌ها رو بگیر
+            configs.extend(self.validator.split_configs(text))
+
+        # حذف تکراری‌های داخل همین کانال بر اساس fingerprint
         unique_configs = []
         seen_in_channel = set()
         for cfg in configs:
@@ -179,23 +146,19 @@ class ConfigFetcher:
                 seen_in_channel.add(fp)
                 unique_configs.append(cfg)
         configs = unique_configs
-        
-        for config in configs[:]:
-            for protocol in self.config.SUPPORTED_PROTOCOLS:
-                if config.startswith(protocol):
-                    processed_configs = self.process_config(config, channel)
-                    if not processed_configs:
-                        configs.remove(config)
-                    break
-        
-        if len(configs) >= self.config.MIN_CONFIGS_PER_CHANNEL:
+
+        # حالا پردازش نهایی (اعتبارسنجی + فیلتر جهانی تکراری)
+        final_configs = []
+        for config in configs:
+            processed = self.process_config(config, channel)
+            final_configs.extend(processed)
+
+        if final_configs:
             self.config.update_channel_stats(channel, True, response_time)
-            self.config.adjust_protocol_limits(channel)
         else:
             self.config.update_channel_stats(channel, False)
-            logger.warning(f"Not enough configs found in {channel.url}: {len(configs)} configs")
-        
-        return configs
+
+        return final_configs
 
     def process_config(self, config: str, channel: ChannelConfig) -> List[str]:
         processed_configs = []
