@@ -4,7 +4,7 @@
 //support-url: https://t.me/BXAMbot
 //profile-web-page-url: https://github.com/4n0nymou3
 
-vless://1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63@brenna.ns.cloudflare.com:443?path=/sghiyws&security=tls&encryption=none&insecure=1&host=terazhedi.info&type=ws&allowInsecure=1&sni=terazhedi.info&note=@freeOnlineVPN#%F0%9F%87%A9%F0%9F%87%AA%20-%20DE%20-%20%40freeOnlineVPN
+vless://1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63@brenna.ns.cloudflare.com:443?path=/sghiyws?ed=2048&security=tls&encryption=none&type=ws&sni=terazhedi.info&note=@freeOnlineVPN#%F0%9F%87%A9%F0%9F%87%AA%20-%20DE%20-%20%40freeOnlineVPN
 
 vless://281d153a-2fae-4725-84ed-602fb3627ca6@185.251.90.45:4443?security=reality&encryption=none&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com&sid=aa7e96542880027a&note=@freeOnlineVPN#%F0%9F%87%B7%F0%9F%87%BA%20-%20RU%20-%20%40freeOnlineVPN
 
