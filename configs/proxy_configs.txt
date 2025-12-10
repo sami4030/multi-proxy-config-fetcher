@@ -16,7 +16,7 @@ vless://3121850a-24aa-41f9-936d-dbdf10a3b31f@94.141.161.204:4443?security=realit
 
 vless://4a3ece53-6000-4ba3-a9fa-fd0d7ba61cf3@185.234.59.74:8443?security=reality&encryption=none&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=stats.vk-portal.net&sid=f79448a30d&note=@freeOnlineVPN#%F0%9F%87%B7%F0%9F%87%BA%20-%20RU%20-%20%40freeOnlineVPN
 
-vless://4a6de183-2ad3-456c-b420-feeac81f6257@51.250.109.47:1488?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ads.x5.ru&sid=6ba85179e30d4fc2&note=@freeOnlineVPN#%F0%9F%87%B5%F0%9F%87%B1%20-%20PL%20-%20%40freeOnlineVPN
+vless://4a6de183-2ad3-456c-b420-feeac81f6257@51.250.99.190:1488?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ads.x5.ru&note=@freeOnlineVPN#%F0%9F%87%B5%F0%9F%87%B1%20-%20PL%20-%20%40freeOnlineVPN
 
 vless://4fbf976a-ecff-42e6-a100-0436ef96ee46@91.107.174.82:3002?security=&fp=chrome&type=tcp&encryption=none&note=@freeOnlineVPN#%F0%9F%87%A9%F0%9F%87%AA%20-%20DE%20-%20%40freeOnlineVPN
 

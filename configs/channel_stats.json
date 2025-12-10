@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-10T21:18:38.824009+00:00",
+  "timestamp": "2025-12-10T22:17:51.766827+00:00",
   "channels": [
     {
       "url": "https://t.me/s/freeonlinevpn",
@@ -8,11 +8,11 @@
         "total_configs": 0,
         "valid_configs": 35,
         "unique_configs": 35,
-        "avg_response_time": 0.7,
+        "avg_response_time": 0.55,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 948.95,
-        "last_success": "2025-12-10T21:18:38.823241+00:00",
+        "overall_score": 949.18,
+        "last_success": "2025-12-10T22:17:51.766082+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 5,
