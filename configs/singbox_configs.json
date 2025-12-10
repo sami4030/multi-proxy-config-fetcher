@@ -56,31 +56,32 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇨🇦 VL 694c (Canada)",
-        "🇷🇺 VL 8080 (Russia)",
-        "🇳🇱 VL 19a0 (The Netherlands)",
-        "🇷🇺 VL 36a8 (Russia)",
-        "🇳🇱 VL 9568 (The Netherlands)",
-        "🇹🇷 VL 8211 (Turkey)",
-        "🇺🇸 VL ee45 (United States)",
-        "🇩🇪 VL f0d3 (Germany)",
-        "🇷🇺 VL 9776 (Russia)",
-        "🇷🇺 VL 506b (Russia)",
-        "🇷🇺 VL db82 (Russia)",
-        "🇩🇪 VL d022 (Germany)",
-        "🇩🇪 VL ceb5 (Germany)",
-        "🇹🇷 VL b2e9 (Türkiye)",
-        "🇷🇺 VL 578d (Russia)",
-        "🇷🇺 VL a040 (Russia)",
-        "🇧🇬 VL 68c9 (Bulgaria)",
-        "🇩🇪 Hy2 8c39 (Germany)",
-        "🇷🇺 Hy2 7ef0 (Russia)",
-        "🇷🇺 Hy2 3589 (Russia)",
-        "🇳🇱 Hy2 f7eb (The Netherlands)",
-        "🇳🇱 Hy2 41ae (The Netherlands)",
-        "🇳🇱 Hy2 4397 (The Netherlands)",
-        "🇩🇪 Hy2 eb3f (Germany)",
-        "🇩🇪 VM 05c4 (Germany)",
+        "🇨🇦 VL a9d2 (Canada)",
+        "🇷🇺 VL effa (Russia)",
+        "🇳🇱 VL ebbd (The Netherlands)",
+        "🇳🇱 VL 1b2b (The Netherlands)",
+        "🇷🇺 VL 4167 (Russia)",
+        "🇳🇱 VL f6d5 (The Netherlands)",
+        "🇵🇱 VL 6f88 (Poland)",
+        "🇹🇷 VL 47c3 (Turkey)",
+        "🇺🇸 VL c8ff (United States)",
+        "🇩🇪 VL 6622 (Germany)",
+        "🇩🇪 VL 26f3 (Germany)",
+        "🇷🇺 VL 1bae (Russia)",
+        "🇷🇺 VL c4a1 (Russia)",
+        "🇩🇪 VL 34a7 (Germany)",
+        "🇹🇷 VL f28f (Türkiye)",
+        "🇷🇺 VL f44a (Russia)",
+        "🇷🇺 VL 46f2 (Russia)",
+        "🇧🇬 VL cd0a (Bulgaria)",
+        "🇨🇦 VL 99d0 (Canada)",
+        "🇷🇺 Hy2 638f (Russia)",
+        "🇷🇺 Hy2 3afa (Russia)",
+        "🇳🇱 Hy2 c501 (The Netherlands)",
+        "🇳🇱 Hy2 49c2 (The Netherlands)",
+        "🇳🇱 Hy2 540e (The Netherlands)",
+        "🇩🇪 Hy2 857f (Germany)",
+        "🇩🇪 VM 5242 (Germany)",
         "Direct"
       ]
     },
@@ -88,31 +89,32 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇨🇦 VL 694c (Canada)",
-        "🇷🇺 VL 8080 (Russia)",
-        "🇳🇱 VL 19a0 (The Netherlands)",
-        "🇷🇺 VL 36a8 (Russia)",
-        "🇳🇱 VL 9568 (The Netherlands)",
-        "🇹🇷 VL 8211 (Turkey)",
-        "🇺🇸 VL ee45 (United States)",
-        "🇩🇪 VL f0d3 (Germany)",
-        "🇷🇺 VL 9776 (Russia)",
-        "🇷🇺 VL 506b (Russia)",
-        "🇷🇺 VL db82 (Russia)",
-        "🇩🇪 VL d022 (Germany)",
-        "🇩🇪 VL ceb5 (Germany)",
-        "🇹🇷 VL b2e9 (Türkiye)",
-        "🇷🇺 VL 578d (Russia)",
-        "🇷🇺 VL a040 (Russia)",
-        "🇧🇬 VL 68c9 (Bulgaria)",
-        "🇩🇪 Hy2 8c39 (Germany)",
-        "🇷🇺 Hy2 7ef0 (Russia)",
-        "🇷🇺 Hy2 3589 (Russia)",
-        "🇳🇱 Hy2 f7eb (The Netherlands)",
-        "🇳🇱 Hy2 41ae (The Netherlands)",
-        "🇳🇱 Hy2 4397 (The Netherlands)",
-        "🇩🇪 Hy2 eb3f (Germany)",
-        "🇩🇪 VM 05c4 (Germany)"
+        "🇨🇦 VL a9d2 (Canada)",
+        "🇷🇺 VL effa (Russia)",
+        "🇳🇱 VL ebbd (The Netherlands)",
+        "🇳🇱 VL 1b2b (The Netherlands)",
+        "🇷🇺 VL 4167 (Russia)",
+        "🇳🇱 VL f6d5 (The Netherlands)",
+        "🇵🇱 VL 6f88 (Poland)",
+        "🇹🇷 VL 47c3 (Turkey)",
+        "🇺🇸 VL c8ff (United States)",
+        "🇩🇪 VL 6622 (Germany)",
+        "🇩🇪 VL 26f3 (Germany)",
+        "🇷🇺 VL 1bae (Russia)",
+        "🇷🇺 VL c4a1 (Russia)",
+        "🇩🇪 VL 34a7 (Germany)",
+        "🇹🇷 VL f28f (Türkiye)",
+        "🇷🇺 VL f44a (Russia)",
+        "🇷🇺 VL 46f2 (Russia)",
+        "🇧🇬 VL cd0a (Bulgaria)",
+        "🇨🇦 VL 99d0 (Canada)",
+        "🇷🇺 Hy2 638f (Russia)",
+        "🇷🇺 Hy2 3afa (Russia)",
+        "🇳🇱 Hy2 c501 (The Netherlands)",
+        "🇳🇱 Hy2 49c2 (The Netherlands)",
+        "🇳🇱 Hy2 540e (The Netherlands)",
+        "🇩🇪 Hy2 857f (Germany)",
+        "🇩🇪 VM 5242 (Germany)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -128,7 +130,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 VL 694c (Canada)",
+      "tag": "🇨🇦 VL a9d2 (Canada)",
       "server": "brenna.ns.cloudflare.com",
       "server_port": 443,
       "uuid": "1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63",
@@ -140,12 +142,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/sghiyws?ed=2048"
+        "path": "/sghiyws",
+        "headers": {
+          "Host": "terazhedi.info"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 VL 8080 (Russia)",
+      "tag": "🇷🇺 VL effa (Russia)",
       "server": "185.234.59.74",
       "server_port": 8443,
       "uuid": "2ca07504-c06a-41a4-b26b-99807a7d24cf",
@@ -159,7 +164,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 VL 19a0 (The Netherlands)",
+      "tag": "🇳🇱 VL ebbd (The Netherlands)",
+      "server": "146.103.113.79",
+      "server_port": 4443,
+      "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": false,
+        "server_name": "github.com",
+        "insecure": false
+      },
+      "transport": null
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 VL 1b2b (The Netherlands)",
       "server": "147.45.230.128",
       "server_port": 4443,
       "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
@@ -173,7 +192,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 VL 36a8 (Russia)",
+      "tag": "🇷🇺 VL 4167 (Russia)",
       "server": "185.251.90.45",
       "server_port": 4443,
       "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
@@ -187,7 +206,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 VL 9568 (The Netherlands)",
+      "tag": "🇳🇱 VL f6d5 (The Netherlands)",
       "server": "45.144.29.222",
       "server_port": 4443,
       "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
@@ -201,7 +220,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 VL 8211 (Turkey)",
+      "tag": "🇵🇱 VL 6f88 (Poland)",
+      "server": "45.82.255.32",
+      "server_port": 4443,
+      "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": false,
+        "server_name": "github.com",
+        "insecure": false
+      },
+      "transport": null
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 VL 47c3 (Turkey)",
       "server": "5.180.45.176",
       "server_port": 4443,
       "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
@@ -215,7 +248,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 VL ee45 (United States)",
+      "tag": "🇺🇸 VL c8ff (United States)",
       "server": "85.209.154.133",
       "server_port": 4443,
       "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
@@ -229,7 +262,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 VL f0d3 (Germany)",
+      "tag": "🇩🇪 VL 6622 (Germany)",
       "server": "89.23.123.8",
       "server_port": 4443,
       "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
@@ -243,7 +276,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 VL 9776 (Russia)",
+      "tag": "🇩🇪 VL 26f3 (Germany)",
+      "server": "94.141.161.204",
+      "server_port": 4443,
+      "uuid": "3121850a-24aa-41f9-936d-dbdf10a3b31f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": false,
+        "server_name": "github.com",
+        "insecure": false
+      },
+      "transport": null
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 VL 1bae (Russia)",
       "server": "185.234.59.74",
       "server_port": 8443,
       "uuid": "4a3ece53-6000-4ba3-a9fa-fd0d7ba61cf3",
@@ -257,7 +304,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 VL 506b (Russia)",
+      "tag": "🇷🇺 VL c4a1 (Russia)",
       "server": "51.250.109.47",
       "server_port": 1488,
       "uuid": "4a6de183-2ad3-456c-b420-feeac81f6257",
@@ -271,21 +318,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 VL db82 (Russia)",
-      "server": "51.250.99.190",
-      "server_port": 1488,
-      "uuid": "4a6de183-2ad3-456c-b420-feeac81f6257",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": false,
-        "server_name": "ads.x5.ru",
-        "insecure": false
-      },
-      "transport": null
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 VL d022 (Germany)",
+      "tag": "🇩🇪 VL 34a7 (Germany)",
       "server": "lovetea.parsianboton.ir",
       "server_port": 3002,
       "uuid": "4fbf976a-ecff-42e6-a100-0436ef96ee46",
@@ -299,24 +332,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 VL ceb5 (Germany)",
-      "server": "88.99.184.17",
-      "server_port": 30351,
-      "uuid": "74e30d16-8922-48dc-ac2e-9be47e8e968c",
-      "flow": null,
-      "tls": {
-        "enabled": true,
-        "server_name": "88.99.184.17",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 VL b2e9 (Türkiye)",
+      "tag": "🇹🇷 VL f28f (Türkiye)",
       "server": "89.144.20.173",
       "server_port": 12146,
       "uuid": "7b379ab3-6402-4d32-84e1-3abe074ed1c4",
@@ -330,7 +346,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 VL 578d (Russia)",
+      "tag": "🇷🇺 VL f44a (Russia)",
       "server": "217.16.24.170",
       "server_port": 443,
       "uuid": "a91e64f0-9295-499d-bf4a-661ad99d4938",
@@ -344,7 +360,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 VL a040 (Russia)",
+      "tag": "🇷🇺 VL 46f2 (Russia)",
       "server": "217.16.24.170",
       "server_port": 8443,
       "uuid": "a91e64f0-9295-499d-bf4a-661ad99d4938",
@@ -358,37 +374,41 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 VL 68c9 (Bulgaria)",
+      "tag": "🇧🇬 VL cd0a (Bulgaria)",
       "server": "141.227.178.242",
       "server_port": 29803,
       "uuid": "aa4f8c93-e4ec-48fe-8043-2f8e4f1c006d",
       "flow": null,
       "tls": {
-        "enabled": true,
+        "enabled": false,
         "server_name": "141.227.178.242",
         "insecure": false
       },
       "transport": null
     },
     {
-      "type": "hysteria2",
-      "tag": "🇩🇪 Hy2 8c39 (Germany)",
-      "server": "91.99.225.11",
+      "type": "vless",
+      "tag": "🇨🇦 VL 99d0 (Canada)",
+      "server": "172.64.32.220",
       "server_port": 443,
-      "password": "EXFdk0goSh",
+      "uuid": "f028a8c0-6763-4558-aee3-2563db9d7825",
+      "flow": null,
       "tls": {
         "enabled": true,
-        "server_name": "refersion.com",
-        "insecure": true
+        "server_name": "freudd.info",
+        "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "Jsbdksj@V2RayyNGvpn$Miracle"
+      "transport": {
+        "type": "ws",
+        "path": "/xxvclws",
+        "headers": {
+          "Host": "freudd.info"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 Hy2 7ef0 (Russia)",
+      "tag": "🇷🇺 Hy2 638f (Russia)",
       "server": "37.18.14.169",
       "server_port": 443,
       "password": "SNItest",
@@ -400,7 +420,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 Hy2 3589 (Russia)",
+      "tag": "🇷🇺 Hy2 3afa (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
@@ -412,7 +432,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 Hy2 f7eb (The Netherlands)",
+      "tag": "🇳🇱 Hy2 c501 (The Netherlands)",
       "server": "206.71.158.37",
       "server_port": 35000,
       "password": "Yet-Another-Public-Config-1",
@@ -428,7 +448,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 Hy2 41ae (The Netherlands)",
+      "tag": "🇳🇱 Hy2 49c2 (The Netherlands)",
       "server": "206.71.158.40",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -444,7 +464,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 Hy2 4397 (The Netherlands)",
+      "tag": "🇳🇱 Hy2 540e (The Netherlands)",
       "server": "206.71.158.41",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -460,13 +480,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 Hy2 eb3f (Germany)",
+      "tag": "🇩🇪 Hy2 857f (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
       "tls": {
         "enabled": true,
-        "server_name": "jnir.pichondan.com",
+        "server_name": "api.kermanshahi.org",
         "insecure": true
       },
       "obfs": {
@@ -476,7 +496,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 VM 05c4 (Germany)",
+      "tag": "🇩🇪 VM 5242 (Germany)",
       "server": "a.confignor.site",
       "server_port": 7443,
       "uuid": "65057eba-d0ba-4903-96f9-f7e2569ab58b",
