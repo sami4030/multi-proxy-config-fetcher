@@ -278,6 +278,48 @@ class ConfigToSingbox:
         except:
             return None
     
+    def parse_tuic(self, config: str) -> Optional[Dict]:
+        """پارس TUIC"""
+        try:
+            if not config.startswith('tuic://'):
+                return None
+            
+            parsed = urlparse(config)
+            if not parsed.hostname or not parsed.port or not parsed.username:
+                return None
+            
+            params = parse_qs(parsed.query)
+            
+            def get_param(key: str, default: str = '') -> str:
+                values = params.get(key, [default])
+                return unquote(values[0]) if values else default
+            
+            cc = get_param('congestion_control', 'bbr').lower()
+            if cc not in ['bbr', 'cubic', 'new_reno']:
+                cc = 'bbr'
+            
+            udp_mode = get_param('udp_relay_mode', 'native').lower()
+            if udp_mode not in ['native', 'quic']:
+                udp_mode = 'native'
+            
+            alpn_str = get_param('alpn', 'h3')
+            alpn = [a.strip() for a in alpn_str.split(',') if a.strip()]
+            
+            return {
+                'uuid': parsed.username,
+                'password': parsed.password or '',
+                'address': parsed.hostname,
+                'port': parsed.port,
+                'congestion_control': cc,
+                'udp_relay_mode': udp_mode,
+                'alpn': alpn,
+                'sni': get_param('sni', parsed.hostname),
+                'disable_sni': get_param('disable_sni', '0') in ('1', 'true'),
+                'insecure': get_param('allow_insecure', get_param('allowInsecure', '0')) in ('1', 'true'),
+            }
+        except:
+            return None
+    
     def convert_to_singbox(self, config: str) -> Optional[Dict]:
         """تبدیل به Sing-Box"""
         config = config.strip()
@@ -440,6 +482,37 @@ class ConfigToSingbox:
                     "method": d['method'],
                     "password": d['password']
                 }
+            
+            # ============== TUIC ==============
+            elif lower.startswith('tuic://'):
+                d = self.parse_tuic(config)
+                if not d:
+                    return None
+                flag, country = get_country_info(d['address'])
+                
+                outbound = {
+                    "type": "tuic",
+                    "tag": f"{flag} TUIC-{str(uuid.uuid4())[:4]} ({country})",
+                    "server": d['address'],
+                    "server_port": d['port'],
+                    "uuid": d['uuid'],
+                    "congestion_control": d['congestion_control'],
+                    "udp_relay_mode": d['udp_relay_mode'],
+                    "tls": {
+                        "enabled": True,
+                        "server_name": d['sni'],
+                        "alpn": d['alpn'],
+                        "insecure": d['insecure'],
+                    }
+                }
+                
+                if d.get('password'):
+                    outbound['password'] = d['password']
+                
+                if d.get('disable_sni'):
+                    outbound['tls']['disable_sni'] = True
+                
+                return outbound
         
         except Exception as e:
             print(f"❌ Conversion failed: {config[:60]}... → {e}")
