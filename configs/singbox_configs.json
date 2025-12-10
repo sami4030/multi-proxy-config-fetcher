@@ -56,7 +56,7 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇨🇷 🇩🇪 - DE - @freeOnlineVPN (Costa Rica)",
+        "🇨🇦 🇩🇪 - DE - @freeOnlineVPN (Canada)",
         "🇷🇺 🇷🇺 - RU - @freeOnlineVPN (Russia)",
         "🇷🇺 🇷🇺 - RU - @freeOnlineVPN (Russia)",
         "🇳🇱 🇳🇱 - NL - @freeOnlineVPN (The Netherlands)",
@@ -77,13 +77,13 @@
         "🇷🇺 🇫🇮 - FI - @freeOnlineVPN (Russia)",
         "🇧🇬 🇧🇬 - BG - @freeOnlineVPN (Bulgaria)",
         "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇷🇺 Hy2-e7e9 (Russia)",
-        "🇷🇺 Hy2-c0ab (Russia)",
-        "🇳🇱 Hy2-c151 (The Netherlands)",
-        "🇳🇱 Hy2-6d59 (The Netherlands)",
-        "🇳🇱 Hy2-e097 (The Netherlands)",
-        "🇩🇪 Hy2-233e (Germany)",
-        "🇩🇪 VM-1153 (Germany)",
+        "🇷🇺 Hy2-4873 (Russia)",
+        "🇷🇺 Hy2-baa4 (Russia)",
+        "🇳🇱 Hy2-974e (The Netherlands)",
+        "🇳🇱 Hy2-5fd8 (The Netherlands)",
+        "🇳🇱 Hy2-5117 (The Netherlands)",
+        "🇩🇪 Hy2-7354 (Germany)",
+        "🇩🇪 VM-3359 (Germany)",
         "Direct"
       ]
     },
@@ -91,7 +91,7 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇨🇷 🇩🇪 - DE - @freeOnlineVPN (Costa Rica)",
+        "🇨🇦 🇩🇪 - DE - @freeOnlineVPN (Canada)",
         "🇷🇺 🇷🇺 - RU - @freeOnlineVPN (Russia)",
         "🇷🇺 🇷🇺 - RU - @freeOnlineVPN (Russia)",
         "🇳🇱 🇳🇱 - NL - @freeOnlineVPN (The Netherlands)",
@@ -112,13 +112,13 @@
         "🇷🇺 🇫🇮 - FI - @freeOnlineVPN (Russia)",
         "🇧🇬 🇧🇬 - BG - @freeOnlineVPN (Bulgaria)",
         "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇷🇺 Hy2-e7e9 (Russia)",
-        "🇷🇺 Hy2-c0ab (Russia)",
-        "🇳🇱 Hy2-c151 (The Netherlands)",
-        "🇳🇱 Hy2-6d59 (The Netherlands)",
-        "🇳🇱 Hy2-e097 (The Netherlands)",
-        "🇩🇪 Hy2-233e (Germany)",
-        "🇩🇪 VM-1153 (Germany)"
+        "🇷🇺 Hy2-4873 (Russia)",
+        "🇷🇺 Hy2-baa4 (Russia)",
+        "🇳🇱 Hy2-974e (The Netherlands)",
+        "🇳🇱 Hy2-5fd8 (The Netherlands)",
+        "🇳🇱 Hy2-5117 (The Netherlands)",
+        "🇩🇪 Hy2-7354 (Germany)",
+        "🇩🇪 VM-3359 (Germany)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -134,7 +134,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇷 🇩🇪 - DE - @freeOnlineVPN (Costa Rica)",
+      "tag": "🇨🇦 🇩🇪 - DE - @freeOnlineVPN (Canada)",
       "server": "brenna.ns.cloudflare.com",
       "server_port": 443,
       "uuid": "1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63",
@@ -554,7 +554,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 Hy2-e7e9 (Russia)",
+      "tag": "🇷🇺 Hy2-4873 (Russia)",
       "server": "37.18.14.169",
       "server_port": 443,
       "password": "SNItest",
@@ -566,7 +566,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 Hy2-c0ab (Russia)",
+      "tag": "🇷🇺 Hy2-baa4 (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
@@ -578,7 +578,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-c151 (The Netherlands)",
+      "tag": "🇳🇱 Hy2-974e (The Netherlands)",
       "server": "206.71.158.37",
       "server_port": 35000,
       "password": "Yet-Another-Public-Config-1",
@@ -594,7 +594,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-6d59 (The Netherlands)",
+      "tag": "🇳🇱 Hy2-5fd8 (The Netherlands)",
       "server": "206.71.158.40",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -610,7 +610,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-e097 (The Netherlands)",
+      "tag": "🇳🇱 Hy2-5117 (The Netherlands)",
       "server": "206.71.158.41",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -626,7 +626,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 Hy2-233e (Germany)",
+      "tag": "🇩🇪 Hy2-7354 (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -642,7 +642,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 VM-1153 (Germany)",
+      "tag": "🇩🇪 VM-3359 (Germany)",
       "server": "a.confignor.site",
       "server_port": 7443,
       "uuid": "65057eba-d0ba-4903-96f9-f7e2569ab58b",
