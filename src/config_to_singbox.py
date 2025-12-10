@@ -248,34 +248,65 @@ class ConfigToSingbox:
             return None
     
     def parse_shadowsocks(self, config: str) -> Optional[Dict]:
-        """پارس Shadowsocks"""
+        """
+        پارس Shadowsocks - نسخه اصلاح شده
+        پشتیبانی از همه فرمت‌ها: استاندارد، SIP002، 2022
+        """
         try:
-            config = config[5:]  # حذف ss://
-            if '@' not in config:
+            if not config.startswith('ss://'):
                 return None
             
-            # فرمت جدید 2022
-            if config.count('@') >= 2:
-                encoded, server_part = config.rsplit('@', 1)
-                method_pass = base64.b64decode(encoded + '==').decode('utf-8')
-                method, password = method_pass.split(':', 1)
-                server = server_part.split('/')[0].split('?')[0].split('#')[0]
-                address, port_str = server.rsplit(':', 1)
-            else:
-                # فرمت قدیمی
-                encoded_all = config.split('#')[0]
-                method_pass_b64, server = encoded_all.split('@')
-                method_pass = base64.b64decode(method_pass_b64 + '==').decode('utf-8')
-                method, password = method_pass.split(':', 1)
-                address, port_str = server.split(':', 1)
+            # حذف ss://
+            config_body = config[5:]
+            
+            # جدا کردن fragment و query params
+            main_part = config_body.split('#')[0].split('?')[0]
+            
+            if '@' not in main_part:
+                return None
+            
+            # تقسیم از آخرین @ (برای handle کردن @ در password)
+            parts = main_part.rsplit('@', 1)
+            left_part = parts[0]
+            server_part = parts[1]
+            
+            # استخراج server:port
+            if ':' not in server_part:
+                return None
+            
+            address, port_str = server_part.rsplit(':', 1)
+            
+            # استخراج method:password
+            method = None
+            password = None
+            
+            # تلاش برای decode base64
+            try:
+                padding = (4 - len(left_part) % 4) % 4
+                left_padded = left_part + ('=' * padding)
+                decoded = base64.b64decode(left_padded).decode('utf-8')
+                
+                if ':' in decoded:
+                    method, password = decoded.split(':', 1)
+            except:
+                pass
+            
+            # اگه base64 کار نکرد، فرض کن plain text هست (فرمت 2022)
+            if not method and ':' in left_part:
+                method, password = left_part.split(':', 1)
+            
+            if not method or not password:
+                return None
             
             return {
-                'method': method,
-                'password': password,
-                'address': address,
+                'method': method.strip(),
+                'password': password.strip(),
+                'address': address.strip(),
                 'port': int(port_str),
             }
-        except:
+            
+        except Exception as e:
+            print(f"SS parse error: {e}")
             return None
     
     def parse_tuic(self, config: str) -> Optional[Dict]:
