@@ -16,13 +16,9 @@ vless://3121850a-24aa-41f9-936d-dbdf10a3b31f@185.251.90.45:4443?security=reality
 
 vless://3121850a-24aa-41f9-936d-dbdf10a3b31f@45.144.29.222:4443?security=reality&encryption=none&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com&sid=aa7e96542880027a&note=@freeOnlineVPN#%F0%9F%87%B3%F0%9F%87%B1%20-%20NL%20-%20%40freeOnlineVPN
 
-vless://3121850a-24aa-41f9-936d-dbdf10a3b31f@45.15.127.139:4443?security=reality&encryption=none&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com&sid=aa7e96542880027a&note=@freeOnlineVPN#%F0%9F%87%AB%F0%9F%87%AE%20-%20FI%20-%20%40freeOnlineVPN
-
 vless://3121850a-24aa-41f9-936d-dbdf10a3b31f@5.180.45.176:4443?security=reality&encryption=none&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com&sid=aa7e96542880027a&note=@freeOnlineVPN#%F0%9F%87%B9%F0%9F%87%B7%20-%20TR%20-%20%40freeOnlineVPN
 
 vless://3121850a-24aa-41f9-936d-dbdf10a3b31f@89.23.123.8:4443?security=reality&encryption=none&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com&sid=aa7e96542880027a&note=@freeOnlineVPN#%F0%9F%87%B8%F0%9F%87%AA%20-%20SE%20-%20%40freeOnlineVPN
-
-vless://3121850a-24aa-41f9-936d-dbdf10a3b31f@94.141.161.204:4443?security=reality&encryption=none&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com&sid=aa7e96542880027a&note=@freeOnlineVPN#%F0%9F%87%A9%F0%9F%87%AA%20-%20DE%20-%20%40freeOnlineVPN
 
 vless://4a3ece53-6000-4ba3-a9fa-fd0d7ba61cf3@185.234.59.74:8443?security=reality&encryption=none&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=stats.vk-portal.net&sid=f79448a30d&note=@freeOnlineVPN#%F0%9F%87%B7%F0%9F%87%BA%20-%20RU%20-%20%40freeOnlineVPN
 
