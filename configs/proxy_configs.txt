@@ -4,7 +4,7 @@
 //support-url: https://t.me/BXAMbot
 //profile-web-page-url: https://github.com/4n0nymou3
 
-vless://02e46039-200d-4ae4-ac90-b0d619f72034@clyde.ns.cloudflare.com:443?path=/aafeuws&security=tls&encryption=none&host=redlabell.info&type=ws&sni=redlabell.info&note=@freeOnlineVPN#%F0%9F%87%B3%F0%9F%87%B1%20-%20NL%20-%20%40freeOnlineVPN
+vless://02e46039-200d-4ae4-ac90-b0d619f72034@clyde.ns.cloudflare.com:443?security=tls&type=ws&path=/aafeuws&host=redlabell.info&sni=redlabell.info&fp=chrome&encryption=none&note=@freeOnlineVPN#%F0%9F%87%B3%F0%9F%87%B1%20-%20NL%20-%20%40freeOnlineVPN
 
 vless://1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63@brenna.ns.cloudflare.com:443?path=/sghiyws?ed=2048&security=tls&encryption=none&type=ws&sni=terazhedi.info&note=@freeOnlineVPN#%F0%9F%87%A9%F0%9F%87%AA%20-%20DE%20-%20%40freeOnlineVPN
 
@@ -15,6 +15,8 @@ vless://2e9177ce-d1cc-45cd-b27f-f16f8fbc117a@fs.ir-sub.fun:80?path=/ZEDMODEON-ZE
 vless://3513666b-d8ca-414f-856b-4ce192a0071b@eng25.netliberated.org:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=eng25.netliberated.org&insecure=0&allowInsecure=0&type=tcp&headerType=none&note=@freeOnlineVPN#%F0%9F%87%B3%F0%9F%87%B1%20-%20NL%20-%20%40freeOnlineVPN
 
 vless://383c9651-cecb-45b4-8df8-2eb85057848d@91.107.143.41:443?path=/09hmyzvdljYpebWBPqDV7&security=tls&alpn=http%2F1.1&encryption=none&host=ognbqqfj1a49.greendop.com%3F%2FTELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN&fp=chrome&type=ws&sni=ognbqqfj1a49.greendop.com&note=@freeOnlineVPN#%F0%9F%87%A9%F0%9F%87%AA%20-%20DE%20-%20%40freeOnlineVPN
+
+vless://80683c47-3706-406b-83b8-1d3695fb1bfb@128.140.94.109:443?security=reality&encryption=none&pbk=uJqfENqH6w2k1sM4qJo2m_nJMmOo91DCNmsxUhgjpQc&headerType=none&fp=chrome&spx=/&type=tcp&sni=www.ea.com&sid=7b4a5e44&note=@freeOnlineVPN#%F0%9F%87%A9%F0%9F%87%AA%20-%20DE%20-%20%40freeOnlineVPN
 
 vless://a91e64f0-9295-499d-bf4a-661ad99d4938@217.16.24.170:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=api-maps.yandex.ru&fp=chrome&pbk=8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ&sid=5540e44a53c3d01c&type=tcp&headerType=none&note=@freeOnlineVPN#%F0%9F%87%B7%F0%9F%87%BA%20-%20RU%20-%20%40freeOnlineVPN
 
@@ -117,7 +119,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnNVJRb3hRdVZ0bkZ2M1h4c2E4ZWRQaXNYTlBueVdLeQ@
 
 
 
-5
+7
  views
 05:03
 
