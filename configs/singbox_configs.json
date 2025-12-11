@@ -56,35 +56,27 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇷🇺 Hy2-7941 (Russia)",
-        "🇷🇺 Hy2-5780 (Russia)",
-        "🇳🇱 Hy2-2f7d (The Netherlands)",
-        "🇳🇱 Hy2-0b86 (The Netherlands)",
-        "🇳🇱 Hy2-b666 (The Netherlands)",
-        "🇳🇱 Hy2-a938 (The Netherlands)",
-        "🇳🇱 Hy2-4fe8 (The Netherlands)",
-        "🇳🇱 Hy2-21be (The Netherlands)",
-        "🇳🇱 Hy2-5e53 (The Netherlands)",
-        "🇩🇪 Hy2-4d46 (Germany)",
+        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
+        "🇨🇷 🇩🇪 - DE - @freeOnlineVPN (Costa Rica)",
         "🇨🇿 🇨🇿 - CZ - @freeOnlineVPN (Czechia)",
         "🇩🇪 🇸🇪 - SE - @freeOnlineVPN (Germany)",
         "🇳🇱 🇳🇱 - NL - @freeOnlineVPN (The Netherlands)",
+        "🇷🇺 🇵🇱 - PL - @freeOnlineVPN (Russia)",
+        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
         "🇷🇺 🇷🇺 - RU - @freeOnlineVPN (Russia)",
         "🇧🇬 🇧🇬 - BG - @freeOnlineVPN (Bulgaria)",
         "🇬🇧 🇬🇧 - GB - @freeOnlineVPN (United Kingdom)",
         "🇮🇹 🇮🇹 - IT - @freeOnlineVPN (Italy)",
-        "🇨🇦 🇬🇧 - GB - @freeOnlineVPN (Canada)",
         "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇹🇷 SS-2b2f (Türkiye)",
-        "🇳🇱 SS-a498 (The Netherlands)",
-        "🇳🇱 SS-6ec4 (The Netherlands)",
-        "🇳🇱 SS-1c06 (The Netherlands)",
-        "🇳🇱 SS-6c14 (The Netherlands)",
-        "🇱🇹 SS-f32f (Lithuania)",
-        "🇱🇻 SS-877d (Latvia)",
-        "🇬🇧 SS-5c6f (United Kingdom)",
-        "🇧🇪 SS-56aa (Belgium)",
+        "🇳🇱 Hy2-4ee3 (The Netherlands)",
+        "🇳🇱 Hy2-8f78 (The Netherlands)",
+        "🇳🇱 Hy2-04a1 (The Netherlands)",
+        "🇳🇱 Hy2-25d2 (The Netherlands)",
+        "🇩🇪 Hy2-f9d3 (Germany)",
+        "🇹🇷 SS-a2d2 (Türkiye)",
+        "🇳🇱 SS-a99b (The Netherlands)",
+        "🇳🇱 SS-dbc5 (The Netherlands)",
+        "🇬🇧 SS-73b0 (United Kingdom)",
         "Direct"
       ]
     },
@@ -92,35 +84,27 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇷🇺 Hy2-7941 (Russia)",
-        "🇷🇺 Hy2-5780 (Russia)",
-        "🇳🇱 Hy2-2f7d (The Netherlands)",
-        "🇳🇱 Hy2-0b86 (The Netherlands)",
-        "🇳🇱 Hy2-b666 (The Netherlands)",
-        "🇳🇱 Hy2-a938 (The Netherlands)",
-        "🇳🇱 Hy2-4fe8 (The Netherlands)",
-        "🇳🇱 Hy2-21be (The Netherlands)",
-        "🇳🇱 Hy2-5e53 (The Netherlands)",
-        "🇩🇪 Hy2-4d46 (Germany)",
+        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
+        "🇨🇷 🇩🇪 - DE - @freeOnlineVPN (Costa Rica)",
         "🇨🇿 🇨🇿 - CZ - @freeOnlineVPN (Czechia)",
         "🇩🇪 🇸🇪 - SE - @freeOnlineVPN (Germany)",
         "🇳🇱 🇳🇱 - NL - @freeOnlineVPN (The Netherlands)",
+        "🇷🇺 🇵🇱 - PL - @freeOnlineVPN (Russia)",
+        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
         "🇷🇺 🇷🇺 - RU - @freeOnlineVPN (Russia)",
         "🇧🇬 🇧🇬 - BG - @freeOnlineVPN (Bulgaria)",
         "🇬🇧 🇬🇧 - GB - @freeOnlineVPN (United Kingdom)",
         "🇮🇹 🇮🇹 - IT - @freeOnlineVPN (Italy)",
-        "🇨🇦 🇬🇧 - GB - @freeOnlineVPN (Canada)",
         "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇹🇷 SS-2b2f (Türkiye)",
-        "🇳🇱 SS-a498 (The Netherlands)",
-        "🇳🇱 SS-6ec4 (The Netherlands)",
-        "🇳🇱 SS-1c06 (The Netherlands)",
-        "🇳🇱 SS-6c14 (The Netherlands)",
-        "🇱🇹 SS-f32f (Lithuania)",
-        "🇱🇻 SS-877d (Latvia)",
-        "🇬🇧 SS-5c6f (United Kingdom)",
-        "🇧🇪 SS-56aa (Belgium)"
+        "🇳🇱 Hy2-4ee3 (The Netherlands)",
+        "🇳🇱 Hy2-8f78 (The Netherlands)",
+        "🇳🇱 Hy2-04a1 (The Netherlands)",
+        "🇳🇱 Hy2-25d2 (The Netherlands)",
+        "🇩🇪 Hy2-f9d3 (Germany)",
+        "🇹🇷 SS-a2d2 (Türkiye)",
+        "🇳🇱 SS-a99b (The Netherlands)",
+        "🇳🇱 SS-dbc5 (The Netherlands)",
+        "🇬🇧 SS-73b0 (United Kingdom)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -135,155 +119,46 @@
       "tag": "block"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 Hy2-7941 (Russia)",
-      "server": "37.18.14.169",
+      "type": "vless",
+      "tag": "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
+      "server": "clyde.ns.cloudflare.com",
       "server_port": 443,
-      "password": "SNItest",
+      "uuid": "02e46039-200d-4ae4-ac90-b0d619f72034",
       "tls": {
         "enabled": true,
-        "server_name": "megafon.ru",
-        "insecure": true
+        "server_name": "redlabell.info",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/aafeuws",
+        "headers": {
+          "Host": "redlabell.info"
+        }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 Hy2-5780 (Russia)",
-      "server": "46.243.235.119",
+      "type": "vless",
+      "tag": "🇨🇷 🇩🇪 - DE - @freeOnlineVPN (Costa Rica)",
+      "server": "brenna.ns.cloudflare.com",
       "server_port": 443,
-      "password": "SNItest",
+      "uuid": "1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63",
       "tls": {
         "enabled": true,
-        "server_name": "gazprombank.ru",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-2f7d (The Netherlands)",
-      "server": "206.71.158.37",
-      "server_port": 35000,
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir",
-        "insecure": true
+        "server_name": "terazhedi.info",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-0b86 (The Netherlands)",
-      "server": "206.71.158.37",
-      "server_port": 35200,
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-b666 (The Netherlands)",
-      "server": "206.71.158.37",
-      "server_port": 36300,
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-a938 (The Netherlands)",
-      "server": "206.71.158.37",
-      "server_port": 36400,
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-4fe8 (The Netherlands)",
-      "server": "206.71.158.37",
-      "server_port": 36600,
-      "password": "Yet-Another-Public-Config-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "YAPC-1.afshin.ir",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Yet-Another-Public-Config-1"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-21be (The Netherlands)",
-      "server": "206.71.158.40",
-      "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.kermanshahi.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-5e53 (The Netherlands)",
-      "server": "206.71.158.41",
-      "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.kermanshahi.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 Hy2-4d46 (Germany)",
-      "server": "77.90.41.197",
-      "server_port": 35000,
-      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.kermanshahi.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
+      "transport": {
+        "type": "ws",
+        "path": "/sghiyws?ed=2048"
       }
     },
     {
@@ -334,6 +209,51 @@
           "http/1.1"
         ],
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 🇵🇱 - PL - @freeOnlineVPN (Russia)",
+      "server": "51.250.99.190",
+      "server_port": 1488,
+      "uuid": "4a6de183-2ad3-456c-b420-feeac81f6257",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
+      "server": "betty.ns.cloudflare.com",
+      "server_port": 443,
+      "uuid": "94daa8ad-75ed-4dbf-a6de-d05036d98df5",
+      "tls": {
+        "enabled": true,
+        "server_name": "vangoghh.info",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tixvuws",
+        "headers": {
+          "Host": "vangoghh.info"
+        }
       }
     },
     {
@@ -393,29 +313,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 🇬🇧 - GB - @freeOnlineVPN (Canada)",
-      "server": "173.245.59.217",
-      "server_port": 443,
-      "uuid": "ee122f13-9b54-49b6-abc5-aa47b464fdb3",
-      "tls": {
-        "enabled": true,
-        "server_name": "azizoarjmand.info",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/yhowcws",
-        "headers": {
-          "Host": "azizoarjmand.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
       "server": "172.64.32.220",
       "server_port": 443,
@@ -438,31 +335,88 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-      "server": "serena.ns.cloudflare.com",
-      "server_port": 443,
-      "uuid": "f028a8c0-6763-4558-aee3-2563db9d7825",
+      "type": "hysteria2",
+      "tag": "🇳🇱 Hy2-4ee3 (The Netherlands)",
+      "server": "206.71.158.37",
+      "server_port": 35000,
+      "password": "Yet-Another-Public-Config-1",
       "tls": {
         "enabled": true,
-        "server_name": "freudd.info",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "YAPC-1.afshin.ir",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇳🇱 Hy2-8f78 (The Netherlands)",
+      "server": "206.71.158.37",
+      "server_port": 35200,
+      "password": "Yet-Another-Public-Config-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "YAPC-1.afshin.ir",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Yet-Another-Public-Config-1"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇳🇱 Hy2-04a1 (The Netherlands)",
+      "server": "206.71.158.40",
+      "server_port": 35000,
+      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.kermanshahi.org",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/xxvclws",
-        "headers": {
-          "Host": "freudd.info"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇳🇱 Hy2-25d2 (The Netherlands)",
+      "server": "206.71.158.41",
+      "server_port": 35000,
+      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.kermanshahi.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 Hy2-f9d3 (Germany)",
+      "server": "77.90.41.197",
+      "server_port": 35000,
+      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
+      "tls": {
+        "enabled": true,
+        "server_name": "jnir.pichondan.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 SS-2b2f (Türkiye)",
+      "tag": "🇹🇷 SS-a2d2 (Türkiye)",
       "server": "94.131.123.236",
       "server_port": 5223,
       "method": "chacha20-ietf-poly1305",
@@ -470,7 +424,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 SS-a498 (The Netherlands)",
+      "tag": "🇳🇱 SS-a99b (The Netherlands)",
       "server": "136.244.100.113",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -478,7 +432,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 SS-6ec4 (The Netherlands)",
+      "tag": "🇳🇱 SS-dbc5 (The Netherlands)",
       "server": "136.244.100.113",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -486,51 +440,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 SS-1c06 (The Netherlands)",
-      "server": "136.244.100.113",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yODLXVLz2FWNTFeSSng3Fm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 SS-6c14 (The Netherlands)",
-      "server": "136.244.100.113",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yODLXVLz2FWNTFeSSng3Fm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 SS-f32f (Lithuania)",
-      "server": "185.237.185.89",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 SS-877d (Latvia)",
-      "server": "46.183.217.204",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 SS-5c6f (United Kingdom)",
+      "tag": "🇬🇧 SS-73b0 (United Kingdom)",
       "server": "62.100.205.100",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
       "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇪 SS-56aa (Belgium)",
-      "server": "45.83.20.206",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "g5RQoxQuVtnFv3Xxsa8edPisXNPnyWKy"
     }
   ],
   "route": {
