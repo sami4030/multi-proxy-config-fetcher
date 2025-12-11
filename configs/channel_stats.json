@@ -1,24 +1,24 @@
 {
-  "timestamp": "2025-12-11T13:36:18.110182+00:00",
+  "timestamp": "2025-12-11T14:20:11.129167+00:00",
   "channels": [
     {
       "url": "https://t.me/s/freeonlinevpn",
       "enabled": true,
       "metrics": {
         "total_configs": 0,
-        "valid_configs": 24,
-        "unique_configs": 24,
-        "avg_response_time": 0.44,
+        "valid_configs": 28,
+        "unique_configs": 28,
+        "avg_response_time": 0.45,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 674.33,
-        "last_success": "2025-12-11T13:36:18.109526+00:00",
+        "overall_score": 774.33,
+        "last_success": "2025-12-11T14:20:11.128496+00:00",
         "protocol_counts": {
           "wireguard://": 0,
-          "hysteria2://": 4,
-          "vless://": 10,
+          "hysteria2://": 5,
+          "vless://": 12,
           "vmess://": 4,
-          "ss://": 6,
+          "ss://": 7,
           "trojan://": 0,
           "tuic://": 0
         }
