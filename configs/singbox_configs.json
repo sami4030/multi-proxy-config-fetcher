@@ -67,23 +67,22 @@
         "🇩🇪 🇩🇪 - DE - @freeOnlineVPN (Germany)",
         "🇮🇹 🇮🇹 - IT - @freeOnlineVPN (Italy)",
         "🇳🇴 🇳🇴 - NO - @freeOnlineVPN (Norway)",
-        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇬🇧 SS-fa9b (United Kingdom)",
-        "🇹🇷 SS-4e0a (Türkiye)",
-        "🇹🇷 SS-b044 (Türkiye)",
-        "🇹🇷 SS-712e (Türkiye)",
-        "🇱🇻 SS-d111 (Latvia)",
-        "🇬🇧 SS-f561 (United Kingdom)",
-        "🇧🇪 SS-d729 (Belgium)",
-        "🇩🇪 Hy2-e742 (Germany)",
-        "🇷🇺 Hy2-f174 (Russia)",
-        "🇩🇪 Hy2-babe (Germany)",
-        "🇳🇱 Hy2-7d89 (The Netherlands)",
-        "🇩🇪 Hy2-f7ce (Germany)",
-        "🇩🇪 VM-d88c (Germany)",
-        "🇩🇪 VM-8010 (Germany)",
-        "🇩🇪 VM-7781 (Germany)",
-        "🇩🇪 VM-a7db (Germany)",
+        "🇬🇧 SS-cfce (United Kingdom)",
+        "🇹🇷 SS-23b1 (Türkiye)",
+        "🇹🇷 SS-8d84 (Türkiye)",
+        "🇹🇷 SS-9077 (Türkiye)",
+        "🇱🇻 SS-c8ca (Latvia)",
+        "🇬🇧 SS-0d4c (United Kingdom)",
+        "🇧🇪 SS-b8cf (Belgium)",
+        "🇩🇪 Hy2-4b05 (Germany)",
+        "🇷🇺 Hy2-7cfa (Russia)",
+        "🇩🇪 Hy2-7fe2 (Germany)",
+        "🇳🇱 Hy2-5b2a (The Netherlands)",
+        "🇩🇪 Hy2-1d34 (Germany)",
+        "🇩🇪 VM-4adc (Germany)",
+        "🇩🇪 VM-6e97 (Germany)",
+        "🇩🇪 VM-dde3 (Germany)",
+        "🇩🇪 VM-fd98 (Germany)",
         "Direct"
       ]
     },
@@ -102,23 +101,22 @@
         "🇩🇪 🇩🇪 - DE - @freeOnlineVPN (Germany)",
         "🇮🇹 🇮🇹 - IT - @freeOnlineVPN (Italy)",
         "🇳🇴 🇳🇴 - NO - @freeOnlineVPN (Norway)",
-        "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-        "🇬🇧 SS-fa9b (United Kingdom)",
-        "🇹🇷 SS-4e0a (Türkiye)",
-        "🇹🇷 SS-b044 (Türkiye)",
-        "🇹🇷 SS-712e (Türkiye)",
-        "🇱🇻 SS-d111 (Latvia)",
-        "🇬🇧 SS-f561 (United Kingdom)",
-        "🇧🇪 SS-d729 (Belgium)",
-        "🇩🇪 Hy2-e742 (Germany)",
-        "🇷🇺 Hy2-f174 (Russia)",
-        "🇩🇪 Hy2-babe (Germany)",
-        "🇳🇱 Hy2-7d89 (The Netherlands)",
-        "🇩🇪 Hy2-f7ce (Germany)",
-        "🇩🇪 VM-d88c (Germany)",
-        "🇩🇪 VM-8010 (Germany)",
-        "🇩🇪 VM-7781 (Germany)",
-        "🇩🇪 VM-a7db (Germany)"
+        "🇬🇧 SS-cfce (United Kingdom)",
+        "🇹🇷 SS-23b1 (Türkiye)",
+        "🇹🇷 SS-8d84 (Türkiye)",
+        "🇹🇷 SS-9077 (Türkiye)",
+        "🇱🇻 SS-c8ca (Latvia)",
+        "🇬🇧 SS-0d4c (United Kingdom)",
+        "🇧🇪 SS-b8cf (Belgium)",
+        "🇩🇪 Hy2-4b05 (Germany)",
+        "🇷🇺 Hy2-7cfa (Russia)",
+        "🇩🇪 Hy2-7fe2 (Germany)",
+        "🇳🇱 Hy2-5b2a (The Netherlands)",
+        "🇩🇪 Hy2-1d34 (Germany)",
+        "🇩🇪 VM-4adc (Germany)",
+        "🇩🇪 VM-6e97 (Germany)",
+        "🇩🇪 VM-dde3 (Germany)",
+        "🇩🇪 VM-fd98 (Germany)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -310,31 +308,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 🇳🇱 - NL - @freeOnlineVPN (Canada)",
-      "server": "172.64.32.220",
-      "server_port": 443,
-      "uuid": "f028a8c0-6763-4558-aee3-2563db9d7825",
-      "tls": {
-        "enabled": true,
-        "server_name": "freudd.info",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/xxvclws",
-        "headers": {
-          "Host": "freudd.info"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 SS-fa9b (United Kingdom)",
+      "tag": "🇬🇧 SS-cfce (United Kingdom)",
       "server": "51.195.202.129",
       "server_port": 5223,
       "method": "chacha20-ietf-poly1305",
@@ -342,7 +317,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 SS-4e0a (Türkiye)",
+      "tag": "🇹🇷 SS-23b1 (Türkiye)",
       "server": "94.131.123.236",
       "server_port": 5223,
       "method": "chacha20-ietf-poly1305",
@@ -350,7 +325,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 SS-b044 (Türkiye)",
+      "tag": "🇹🇷 SS-8d84 (Türkiye)",
       "server": "94.131.123.236",
       "server_port": 5223,
       "method": "chacha20-ietf-poly1305",
@@ -358,7 +333,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 SS-712e (Türkiye)",
+      "tag": "🇹🇷 SS-9077 (Türkiye)",
       "server": "94.131.123.236",
       "server_port": 5223,
       "method": "chacha20-ietf-poly1305",
@@ -366,7 +341,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 SS-d111 (Latvia)",
+      "tag": "🇱🇻 SS-c8ca (Latvia)",
       "server": "46.183.217.204",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
@@ -374,7 +349,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 SS-f561 (United Kingdom)",
+      "tag": "🇬🇧 SS-0d4c (United Kingdom)",
       "server": "62.100.205.100",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
@@ -382,7 +357,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇪 SS-d729 (Belgium)",
+      "tag": "🇧🇪 SS-b8cf (Belgium)",
       "server": "45.83.20.206",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -390,7 +365,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 Hy2-e742 (Germany)",
+      "tag": "🇩🇪 Hy2-4b05 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
       "password": "3FyodfybrY",
@@ -406,7 +381,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 Hy2-f174 (Russia)",
+      "tag": "🇷🇺 Hy2-7cfa (Russia)",
       "server": "46.243.235.119",
       "server_port": 443,
       "password": "SNItest",
@@ -418,7 +393,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 Hy2-babe (Germany)",
+      "tag": "🇩🇪 Hy2-7fe2 (Germany)",
       "server": "91.99.225.11",
       "server_port": 443,
       "password": "TA524PW3Hg",
@@ -434,7 +409,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 Hy2-7d89 (The Netherlands)",
+      "tag": "🇳🇱 Hy2-5b2a (The Netherlands)",
       "server": "206.71.158.41",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -450,7 +425,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 Hy2-f7ce (Germany)",
+      "tag": "🇩🇪 Hy2-1d34 (Germany)",
       "server": "77.90.41.197",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -466,7 +441,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 VM-d88c (Germany)",
+      "tag": "🇩🇪 VM-4adc (Germany)",
       "server": "a.confignor.site",
       "server_port": 7443,
       "uuid": "6815aa24-bf89-4b88-aa98-359f6ff99130",
@@ -477,7 +452,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 VM-8010 (Germany)",
+      "tag": "🇩🇪 VM-6e97 (Germany)",
       "server": "a.confignor.site",
       "server_port": 7443,
       "uuid": "f10d9396-ba1d-46ca-a842-ddf17f0e9c8f",
@@ -488,7 +463,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 VM-7781 (Germany)",
+      "tag": "🇩🇪 VM-dde3 (Germany)",
       "server": "a.confignor.site",
       "server_port": 7443,
       "uuid": "dbb305d2-bad7-4cf9-982f-14be5efeaf15",
@@ -499,7 +474,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 VM-a7db (Germany)",
+      "tag": "🇩🇪 VM-fd98 (Germany)",
       "server": "a.confignor.site",
       "server_port": 7443,
       "uuid": "e1fc0fcd-1841-468c-a316-73ea05980daf",
