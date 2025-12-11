@@ -28,30 +28,34 @@
 """
 
 SOURCE_URLS = [
-    # ==================== لینک 1 ====================
+    # ==================== کانال اول: freeonlinevpn ====================
+    # فقط IP های 91.99.225.11 و 91.99.225.12
     {
         "url": "https://t.me/s/freeonlinevpn",
         "filters": {
             "servers": [
-                "91.99.225.11",          # IP خاص
+                "91.99.225.11",    # IP اول
             ],
+            "countries": ["*"],    # همه کشورها
+            "protocols": ["*"],    # همه پروتکل‌ها
+            "ports": ["*"],        # همه پورت‌ها
         },
-        "priority": 1,
+        "priority": 10,            # اولویت بالا
         "enabled": True
     },
     
-    # ==================== لینک 2 ====================
+    # ==================== کانال دوم: zedmodeonVPN ====================
     {
         "url": "https://t.me/s/zedmodeonVPN",
         "filters": {
             "servers": ["*"],
-            "countries": ["*"],
-            "protocols": ["*"],
-            "ports": ["*"],
+            "countries": ["*"],       # همه کشورها
+            "protocols": ["*"],       # همه پروتکل‌ها
+            "ports": ["*"],           # همه پورت‌ها
         },
-        "priority": 1,
-        "enabled": False  # این کانال غیرفعاله
-    },    
+        "priority": 10,               # اولویت بالا
+        "enabled": True
+    },
     
     # ==================== مثال 1: فقط سرورهای خاص ====================
     {
@@ -146,7 +150,7 @@ SOURCE_URLS = [
 USE_MAXIMUM_POWER = False
 
 # تعداد کانفیگ مورد نیاز (فقط اگر USE_MAXIMUM_POWER = False)
-SPECIFIC_CONFIG_COUNT = 200
+SPECIFIC_CONFIG_COUNT = 15
 
 # پروتکل‌های فعال (فیلتر سراسری)
 ENABLED_PROTOCOLS = {
@@ -160,7 +164,7 @@ ENABLED_PROTOCOLS = {
 }
 
 # حداکثر سن کانفیگ‌ها (روز)
-MAX_CONFIG_AGE_DAYS = 7
+MAX_CONFIG_AGE_DAYS = 2
 
 
 # ==============================================================================
