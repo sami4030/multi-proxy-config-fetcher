@@ -24,7 +24,7 @@ SOURCE_URLS = [
     # ==================== کانال دوم: zedmodeonvpn ====================
     # همه پروکسی‌ها
     {
-        "url": "https://t.me/s/zedmodeonVPN,  # 🔥 lowercase
+        "url": "https://t.me/s/zedmodeonVPN",  # 🔥 lowercase
         "filters": {
             "servers": ["*"],      # همه سرورها
             "countries": ["*"],    # همه کشورها
