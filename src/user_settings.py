@@ -17,7 +17,7 @@ SOURCE_URLS = [
             "ports": ["*"],        # همه پورت‌ها
         },
         "priority": 10,            # اولویت بالا
-        "enabled": True,
+        "enabled": False,
         "max_messages": 15,        # 🔥 فقط 15 پست آخر
     },
     
