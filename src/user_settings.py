@@ -33,7 +33,7 @@ SOURCE_URLS = [
         },
         "priority": 10,            # اولویت بالا
         "enabled": True,
-        "max_messages": 15,        # 🔥 فقط 15 پست آخر
+        "max_messages": 1,        # 🔥 فقط 15 پست آخر
     },
 ]
 
