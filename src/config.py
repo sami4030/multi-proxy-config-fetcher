@@ -36,6 +36,16 @@ class ChannelConfig:
         self.error_count = 0
         self.last_check_time = None
         
+        # فیلترها و تنظیمات
+        self.filters = {
+            'servers': ['*'],
+            'countries': ['*'],
+            'protocols': ['*'],
+            'ports': ['*']
+        }
+        self.priority = 5
+        self.max_messages = None  # 👈 اضافه کن
+        
     def _validate_url(self, url: str) -> str:
         if not url or not isinstance(url, str):
             raise ValueError("Invalid URL")
@@ -70,7 +80,38 @@ class ProxyConfig:
         self.specific_config_count = SPECIFIC_CONFIG_COUNT
         self.MAX_CONFIG_AGE_DAYS = MAX_CONFIG_AGE_DAYS
 
-        initial_urls = [ChannelConfig(url=url) for url in SOURCE_URLS]
+        initial_urls = []
+        for source in SOURCE_URLS:
+            if isinstance(source, dict):
+                # فرمت جدید با فیلتر
+                if source.get('enabled', True):
+                    channel = ChannelConfig(url=source['url'])
+                    channel.filters = source.get('filters', {
+                        'servers': ['*'],
+                        'countries': ['*'],
+                        'protocols': ['*'],
+                        'ports': ['*']
+                    })
+                    channel.priority = source.get('priority', 5)
+                    channel.max_messages = source.get('max_messages', None)  # 👈 اضافه کن
+                    initial_urls.append(channel)
+            else:
+                # فرمت قدیمی (فقط URL)
+                channel = ChannelConfig(url=source)
+                channel.filters = {
+                    'servers': ['*'],
+                    'countries': ['*'],
+                    'protocols': ['*'],
+                    'ports': ['*']
+                }
+                channel.priority = 5
+                channel.max_messages = None  # 👈 اضافه کن
+                initial_urls.append(channel)
+        
+        # مرتب‌سازی بر اساس priority (اگه فعال باشه)
+        if hasattr(user_settings, 'SORT_BY_PRIORITY') and user_settings.SORT_BY_PRIORITY:
+            initial_urls.sort(key=lambda x: x.priority, reverse=True)
+        
         self.SOURCE_URLS = self._remove_duplicate_urls(initial_urls)
         self.SUPPORTED_PROTOCOLS = self._initialize_protocols()
         self._initialize_settings()
