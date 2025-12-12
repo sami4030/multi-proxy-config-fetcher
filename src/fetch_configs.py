@@ -371,21 +371,8 @@ class ConfigFetcher:
             if idx < total_channels:
                 time.sleep(2)
         
-        # 🔥 مرتب‌سازی بر اساس timestamp (جدیدترین اول)
-        # و انتخاب محدودیت تعداد
-        sorted_configs = sorted(
-            self.unique_configs.items(),
-            key=lambda x: (x[1][2], x[1][1]),  # (priority, timestamp)
-            reverse=True  # بالاترین priority و جدیدترین timestamp
-        )
-        
-        # 🎯 محدود کردن به SPECIFIC_CONFIG_COUNT (اگه فعال باشه)
-        if not self.config.use_maximum_power and self.config.specific_config_count > 0:
-            sorted_configs = sorted_configs[:self.config.specific_config_count]
-            logger.info(f"🎯 Limited to last {self.config.specific_config_count} configs (by priority + timestamp)")
-        
-        # تبدیل به لیست
-        final_configs = [cfg for _, (cfg, _, _) in sorted_configs]
+        # تبدیل دیکشنری به لیست (فقط آخرین نسخه‌ها)
+        final_configs = [cfg for cfg, _, _ in self.unique_configs.values()]
         
         logger.info(f"\n{'='*70}")
         logger.info(f"📊 Final Statistics")
