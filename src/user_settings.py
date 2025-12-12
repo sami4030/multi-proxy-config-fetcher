@@ -13,7 +13,7 @@ SOURCE_URLS = [
                 "91.99.225.11",    # فقط این IP
             ],
             "countries": ["*"],    # همه کشورها
-            "protocols": ["hysteria2", "hy2"],    # 🔥 هر دو فرمت
+            "protocols": ["hysteria2"],    # 🔥 هر دو فرمت
             "ports": ["*"],        # همه پورت‌ها
         },
         "priority": 10,            # اولویت بالا
@@ -24,7 +24,7 @@ SOURCE_URLS = [
     # ==================== کانال دوم: zedmodeonvpn ====================
     # همه پروکسی‌ها
     {
-        "url": "https://t.me/s/zedmodeonvpn",  # 🔥 lowercase
+        "url": "https://t.me/s/zedmodeonVPN,  # 🔥 lowercase
         "filters": {
             "servers": ["*"],      # همه سرورها
             "countries": ["*"],    # همه کشورها
