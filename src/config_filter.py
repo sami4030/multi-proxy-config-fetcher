@@ -39,26 +39,30 @@ class ConfigFilter:
         try:
             # تشخیص پروتکل
             protocol = None
+            
+            # 🔥 نرمال‌سازی hy2 به hysteria2
+            normalized_config = config
+            if config.lower().startswith('hy2://'):
+                normalized_config = config.replace('hy2://', 'hysteria2://', 1)
+            
             for proto in ['vless://', 'vmess://', 'trojan://', 'ss://', 
-                         'hysteria2://', 'hy2://', 'tuic://', 'wireguard://']:
-                if config.startswith(proto):
+                         'hysteria2://', 'tuic://', 'wireguard://']:
+                if normalized_config.lower().startswith(proto):
                     protocol = proto.replace('://', '')
-                    if protocol == 'hy2':
-                        protocol = 'hysteria2'
                     break
             
             if not protocol:
                 return None
             
             # استخراج server و port
-            parsed = urlparse(config)
+            parsed = urlparse(normalized_config)
             server = parsed.hostname
             port = parsed.port
             
             if not server:
                 # برای Shadowsocks که فرمت متفاوته
                 if protocol == 'ss':
-                    server, port = self._extract_ss_server_port(config)
+                    server, port = self._extract_ss_server_port(normalized_config)
             
             if not server or not port:
                 return None
