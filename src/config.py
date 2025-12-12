@@ -6,7 +6,20 @@ from dataclasses import dataclass
 import logging
 from math import inf
 
-from user_settings import SOURCE_URLS, USE_MAXIMUM_POWER, SPECIFIC_CONFIG_COUNT, ENABLED_PROTOCOLS, MAX_CONFIG_AGE_DAYS
+# ✅ FIX: Import در ابتدای فایل
+try:
+    import user_settings
+    USER_SETTINGS_AVAILABLE = True
+except ImportError:
+    USER_SETTINGS_AVAILABLE = False
+    # Default values
+    class user_settings:
+        SOURCE_URLS = []
+        USE_MAXIMUM_POWER = False
+        SPECIFIC_CONFIG_COUNT = 50
+        ENABLED_PROTOCOLS = {}
+        MAX_CONFIG_AGE_DAYS = 7
+        SORT_BY_PRIORITY = False
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -36,7 +49,6 @@ class ChannelConfig:
         self.error_count = 0
         self.last_check_time = None
         
-        # فیلترها و تنظیمات
         self.filters = {
             'servers': ['*'],
             'countries': ['*'],
@@ -44,7 +56,7 @@ class ChannelConfig:
             'ports': ['*']
         }
         self.priority = 5
-        self.max_messages = None  # 👈 اضافه کن
+        self.max_messages = None
         
     def _validate_url(self, url: str) -> str:
         if not url or not isinstance(url, str):
@@ -76,14 +88,13 @@ class ChannelConfig:
 
 class ProxyConfig:
     def __init__(self):
-        self.use_maximum_power = USE_MAXIMUM_POWER
-        self.specific_config_count = SPECIFIC_CONFIG_COUNT
-        self.MAX_CONFIG_AGE_DAYS = MAX_CONFIG_AGE_DAYS
+        self.use_maximum_power = user_settings.USE_MAXIMUM_POWER
+        self.specific_config_count = user_settings.SPECIFIC_CONFIG_COUNT
+        self.MAX_CONFIG_AGE_DAYS = user_settings.MAX_CONFIG_AGE_DAYS
 
         initial_urls = []
-        for source in SOURCE_URLS:
+        for source in user_settings.SOURCE_URLS:
             if isinstance(source, dict):
-                # فرمت جدید با فیلتر
                 if source.get('enabled', True):
                     channel = ChannelConfig(url=source['url'])
                     channel.filters = source.get('filters', {
@@ -93,10 +104,9 @@ class ProxyConfig:
                         'ports': ['*']
                     })
                     channel.priority = source.get('priority', 5)
-                    channel.max_messages = source.get('max_messages', None)  # 👈 اضافه کن
+                    channel.max_messages = source.get('max_messages', None)
                     initial_urls.append(channel)
             else:
-                # فرمت قدیمی (فقط URL)
                 channel = ChannelConfig(url=source)
                 channel.filters = {
                     'servers': ['*'],
@@ -105,11 +115,11 @@ class ProxyConfig:
                     'ports': ['*']
                 }
                 channel.priority = 5
-                channel.max_messages = None  # 👈 اضافه کن
+                channel.max_messages = None
                 initial_urls.append(channel)
         
-        # مرتب‌سازی بر اساس priority (اگه فعال باشه)
-        if hasattr(user_settings, 'SORT_BY_PRIORITY') and user_settings.SORT_BY_PRIORITY:
+        # ✅ FIX: چک کردن USER_SETTINGS_AVAILABLE
+        if USER_SETTINGS_AVAILABLE and hasattr(user_settings, 'SORT_BY_PRIORITY') and user_settings.SORT_BY_PRIORITY:
             initial_urls.sort(key=lambda x: x.priority, reverse=True)
         
         self.SOURCE_URLS = self._remove_duplicate_urls(initial_urls)
@@ -118,14 +128,15 @@ class ProxyConfig:
         self._set_smart_limits()
 
     def _initialize_protocols(self) -> Dict:
+        enabled_protocols = getattr(user_settings, 'ENABLED_PROTOCOLS', {})
         return {
-            "wireguard://": {"priority": 1, "aliases": [], "enabled": ENABLED_PROTOCOLS.get("wireguard://", False)},
-            "hysteria2://": {"priority": 2, "aliases": ["hy2://"], "enabled": ENABLED_PROTOCOLS.get("hysteria2://", False)},
-            "vless://": {"priority": 2, "aliases": [], "enabled": ENABLED_PROTOCOLS.get("vless://", False)},
-            "vmess://": {"priority": 1, "aliases": [], "enabled": ENABLED_PROTOCOLS.get("vmess://", False)},
-            "ss://": {"priority": 2, "aliases": [], "enabled": ENABLED_PROTOCOLS.get("ss://", False)},
-            "trojan://": {"priority": 2, "aliases": [], "enabled": ENABLED_PROTOCOLS.get("trojan://", False)},
-            "tuic://": {"priority": 1, "aliases": [], "enabled": ENABLED_PROTOCOLS.get("tuic://", False)}
+            "wireguard://": {"priority": 1, "aliases": [], "enabled": enabled_protocols.get("wireguard://", False)},
+            "hysteria2://": {"priority": 2, "aliases": ["hy2://"], "enabled": enabled_protocols.get("hysteria2://", False)},
+            "vless://": {"priority": 2, "aliases": [], "enabled": enabled_protocols.get("vless://", False)},
+            "vmess://": {"priority": 1, "aliases": [], "enabled": enabled_protocols.get("vmess://", False)},
+            "ss://": {"priority": 2, "aliases": [], "enabled": enabled_protocols.get("ss://", False)},
+            "trojan://": {"priority": 2, "aliases": [], "enabled": enabled_protocols.get("trojan://", False)},
+            "tuic://": {"priority": 1, "aliases": [], "enabled": enabled_protocols.get("tuic://", False)}
         }
 
     def _initialize_settings(self):
@@ -299,6 +310,8 @@ class ProxyConfig:
 
     def save_empty_config_file(self) -> bool:
         try:
+            import os
+            os.makedirs(os.path.dirname(self.OUTPUT_FILE), exist_ok=True)
             with open(self.OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 f.write("")
             return True
