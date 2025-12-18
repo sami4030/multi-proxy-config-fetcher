@@ -56,10 +56,10 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇷🇴 @ZEDMODEON 🇷🇴 (Romania)",
-        "🇳🇱 @ZEDMODEON 🇳🇱 86 (The Netherlands)",
+        "🇧🇬 @ZEDMODEON 🇧🇬 (Bulgaria)",
         "🇳🇴 @ZEDMODEON 🇳🇴 (Norway)",
-        "🇸🇪 @ZEDMODEON 🇸🇪 (Sweden)",
+        "🇷🇴 @ZEDMODEON 🇷🇴 (Romania)",
+        "🇩🇰 @ZEDMODEON 🇩🇰 (Denmark)",
         "Direct"
       ]
     },
@@ -67,10 +67,10 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇷🇴 @ZEDMODEON 🇷🇴 (Romania)",
-        "🇳🇱 @ZEDMODEON 🇳🇱 86 (The Netherlands)",
+        "🇧🇬 @ZEDMODEON 🇧🇬 (Bulgaria)",
         "🇳🇴 @ZEDMODEON 🇳🇴 (Norway)",
-        "🇸🇪 @ZEDMODEON 🇸🇪 (Sweden)"
+        "🇷🇴 @ZEDMODEON 🇷🇴 (Romania)",
+        "🇩🇰 @ZEDMODEON 🇩🇰 (Denmark)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -86,32 +86,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 @ZEDMODEON 🇷🇴 (Romania)",
-      "server": "141.227.180.236",
-      "server_port": 17274,
-      "uuid": "bb17da6c-0022-435f-b9d2-b65e02396fd8",
-      "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 @ZEDMODEON 🇳🇱 86 (The Netherlands)",
-      "server": "2001:41d0:ab02::2:0:3b5",
-      "server_port": 53025,
-      "uuid": "4ba7deb3-83a9-48d2-ad8a-e115183b1e6d",
-      "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇴 @ZEDMODEON 🇳🇴 (Norway)",
-      "server": "141.227.166.221",
-      "server_port": 13153,
-      "uuid": "4b9edb48-6196-4504-b0c1-65ef5a1d966c",
+      "tag": "🇧🇬 @ZEDMODEON 🇧🇬 (Bulgaria)",
+      "server": "141.227.178.176",
+      "server_port": 34717,
+      "uuid": "19650ff0-e51f-49e1-88b4-d902865c6a99",
       "transport": {
         "type": "grpc",
         "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
@@ -119,10 +97,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 @ZEDMODEON 🇸🇪 (Sweden)",
-      "server": "141.227.160.163",
-      "server_port": 25534,
-      "uuid": "5dad69ad-8d8e-4418-936a-74a3350ed8a0",
+      "tag": "🇳🇴 @ZEDMODEON 🇳🇴 (Norway)",
+      "server": "141.227.166.221",
+      "server_port": 13154,
+      "uuid": "a677cf36-10b2-4dbd-b723-a2e963bed054",
+      "transport": {
+        "type": "grpc",
+        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 @ZEDMODEON 🇷🇴 (Romania)",
+      "server": "141.227.180.236",
+      "server_port": 17275,
+      "uuid": "5db7b242-c82c-4991-9b32-d597805b32ee",
+      "transport": {
+        "type": "grpc",
+        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇰 @ZEDMODEON 🇩🇰 (Denmark)",
+      "server": "141.227.172.96",
+      "server_port": 56089,
+      "uuid": "2d535288-d08e-4de4-b674-fd8cb3c6e4d3",
       "transport": {
         "type": "grpc",
         "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
