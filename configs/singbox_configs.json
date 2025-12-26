@@ -57,7 +57,7 @@
       "outbounds": [
         "Auto",
         "🇬🇧 @ZEDMODEON 🇬🇧 (United Kingdom)",
-        "🇨🇦 @ZEDMODEON 🇸🇪 163 (Canada)",
+        "🇩🇪 @ZEDMODEON 🇸🇪 163 (Germany)",
         "🇮🇪 @ZEDMODEON 🇮🇪 (Ireland)",
         "🇫🇷 @ZEDMODEON 🇫🇷 (France)",
         "Direct"
@@ -68,7 +68,7 @@
       "tag": "Auto",
       "outbounds": [
         "🇬🇧 @ZEDMODEON 🇬🇧 (United Kingdom)",
-        "🇨🇦 @ZEDMODEON 🇸🇪 163 (Canada)",
+        "🇩🇪 @ZEDMODEON 🇸🇪 163 (Germany)",
         "🇮🇪 @ZEDMODEON 🇮🇪 (Ireland)",
         "🇫🇷 @ZEDMODEON 🇫🇷 (France)"
       ],
@@ -97,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 @ZEDMODEON 🇸🇪 163 (Canada)",
+      "tag": "🇩🇪 @ZEDMODEON 🇸🇪 163 (Germany)",
       "server": "fs.ir-sub.fun",
       "server_port": 80,
       "uuid": "2e9177ce-d1cc-45cd-b27f-f16f8fbc117a",
