@@ -56,10 +56,10 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇬🇧 @ZEDMODEON 🇬🇧 (United Kingdom)",
-        "🇳🇱 @ZEDMODEON 🇸🇪 163 (The Netherlands)",
-        "🇮🇪 @ZEDMODEON 🇮🇪 (Ireland)",
-        "🇫🇷 @ZEDMODEON 🇫🇷 (France)",
+        "🇳🇱 @ZEDMODEON 🇫🇮122 (The Netherlands)",
+        "🇳🇱 @ZEDMODEON 🇳🇱 (The Netherlands)",
+        "🇳🇱 @ZEDMODEON 🇷🇴243 (The Netherlands)",
+        "🇳🇱 @ZEDMODEON 🇪🇸176 (The Netherlands)",
         "Direct"
       ]
     },
@@ -67,10 +67,10 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇬🇧 @ZEDMODEON 🇬🇧 (United Kingdom)",
-        "🇳🇱 @ZEDMODEON 🇸🇪 163 (The Netherlands)",
-        "🇮🇪 @ZEDMODEON 🇮🇪 (Ireland)",
-        "🇫🇷 @ZEDMODEON 🇫🇷 (France)"
+        "🇳🇱 @ZEDMODEON 🇫🇮122 (The Netherlands)",
+        "🇳🇱 @ZEDMODEON 🇳🇱 (The Netherlands)",
+        "🇳🇱 @ZEDMODEON 🇷🇴243 (The Netherlands)",
+        "🇳🇱 @ZEDMODEON 🇪🇸176 (The Netherlands)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -86,35 +86,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 @ZEDMODEON 🇬🇧 (United Kingdom)",
-      "server": "141.227.174.26",
-      "server_port": 32418,
-      "uuid": "aab74025-0737-410c-b048-bcbde3bc1852",
-      "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 @ZEDMODEON 🇸🇪 163 (The Netherlands)",
+      "tag": "🇳🇱 @ZEDMODEON 🇫🇮122 (The Netherlands)",
       "server": "fs.ir-sub.fun",
       "server_port": 80,
-      "uuid": "2e9177ce-d1cc-45cd-b27f-f16f8fbc117a",
+      "uuid": "57a71c71-e9dc-49cf-bb2d-d2d433a6c769",
       "transport": {
         "type": "ws",
-        "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON",
+        "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
         "headers": {
-          "Host": "zedd.global.ssl.fastly.net"
+          "Host": "zedd2.global.ssl.fastly.net"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇪 @ZEDMODEON 🇮🇪 (Ireland)",
-      "server": "141.227.162.151",
-      "server_port": 33922,
-      "uuid": "02fa8d5a-676c-4e71-b950-4bd53b54266f",
+      "tag": "🇳🇱 @ZEDMODEON 🇳🇱 (The Netherlands)",
+      "server": "141.227.130.6",
+      "server_port": 46105,
+      "uuid": "763ffbc5-a21c-42e7-86d6-53dfb4dd0dd0",
       "transport": {
         "type": "grpc",
         "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
@@ -122,13 +111,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 @ZEDMODEON 🇫🇷 (France)",
-      "server": "141.227.132.7",
-      "server_port": 21429,
-      "uuid": "8d3bd623-1b3c-4aeb-98c4-d42326ee13b2",
+      "tag": "🇳🇱 @ZEDMODEON 🇷🇴243 (The Netherlands)",
+      "server": "fs.ir-sub.fun",
+      "server_port": 80,
+      "uuid": "c7e2ee8c-00a1-4b5b-a26d-bcb6e24e6f07",
       "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+        "type": "ws",
+        "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+        "headers": {
+          "Host": "zedd3.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 @ZEDMODEON 🇪🇸176 (The Netherlands)",
+      "server": "fs.ir-sub.fun",
+      "server_port": 80,
+      "uuid": "45d5ff54-2fce-4e0a-9ab3-18fb566dbfb9",
+      "transport": {
+        "type": "ws",
+        "path": "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+        "headers": {
+          "Host": "zedd4.global.ssl.fastly.net"
+        }
       }
     }
   ],
