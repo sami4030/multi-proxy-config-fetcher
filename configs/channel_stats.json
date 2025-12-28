@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-28T06:27:21.985574+00:00",
+  "timestamp": "2025-12-28T07:17:55.590396+00:00",
   "channels": [
     {
       "url": "https://t.me/s/zedmodeonVPN",
@@ -23,11 +23,11 @@
         "total_configs": 1995,
         "valid_configs": 34,
         "unique_configs": 34,
-        "avg_response_time": 0.57,
+        "avg_response_time": 0.68,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 74.56,
-        "last_success": "2025-12-28T06:27:21.984546+00:00",
+        "overall_score": 74.4,
+        "last_success": "2025-12-28T07:17:55.529307+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
