@@ -56,9 +56,9 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇳🇱 @ZEDMODEON 🇫🇮122 (The Netherlands)",
+        "🇩🇪 @ZEDMODEON 🇫🇮122 (Germany)",
         "🇳🇱 @ZEDMODEON 🇳🇱 (The Netherlands)",
-        "🇳🇱 @ZEDMODEON 🇪🇸176 (The Netherlands)",
+        "🇩🇪 @ZEDMODEON 🇪🇸176 (Germany)",
         "🇨🇿 @ZEDMODEON 🇨🇿 (Czechia)",
         "Direct"
       ]
@@ -67,9 +67,9 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇳🇱 @ZEDMODEON 🇫🇮122 (The Netherlands)",
+        "🇩🇪 @ZEDMODEON 🇫🇮122 (Germany)",
         "🇳🇱 @ZEDMODEON 🇳🇱 (The Netherlands)",
-        "🇳🇱 @ZEDMODEON 🇪🇸176 (The Netherlands)",
+        "🇩🇪 @ZEDMODEON 🇪🇸176 (Germany)",
         "🇨🇿 @ZEDMODEON 🇨🇿 (Czechia)"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -86,7 +86,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 @ZEDMODEON 🇫🇮122 (The Netherlands)",
+      "tag": "🇩🇪 @ZEDMODEON 🇫🇮122 (Germany)",
       "server": "fs.ir-sub.fun",
       "server_port": 80,
       "uuid": "a9b548c2-c33e-4b8e-befd-13fec8ab2e2d",
@@ -111,7 +111,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 @ZEDMODEON 🇪🇸176 (The Netherlands)",
+      "tag": "🇩🇪 @ZEDMODEON 🇪🇸176 (Germany)",
       "server": "fs.ir-sub.fun",
       "server_port": 80,
       "uuid": "1a452b02-7302-432c-a20c-1bd9ef18c416",
