@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-12-30T18:27:27.466351+00:00",
+  "timestamp": "2025-12-30T19:22:31.493851+00:00",
   "channels": [
     {
       "url": "https://t.me/s/zedmodeonVPN",
-      "enabled": true,
+      "enabled": false,
       "priority": 10,
       "filters": {
         "servers": [
@@ -20,18 +20,18 @@
         ]
       },
       "metrics": {
-        "total_configs": 1882,
-        "valid_configs": 31,
-        "unique_configs": 31,
-        "avg_response_time": 0.48,
-        "success_count": 1,
-        "fail_count": 0,
-        "overall_score": 74.7,
-        "last_success": "2025-12-30T18:27:27.465395+00:00",
+        "total_configs": 0,
+        "valid_configs": 0,
+        "unique_configs": 0,
+        "avg_response_time": 0,
+        "success_count": 0,
+        "fail_count": 1,
+        "overall_score": 15.0,
+        "last_success": null,
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
-          "vless://": 31,
+          "vless://": 0,
           "vmess://": 0,
           "ss://": 0,
           "trojan://": 0,
