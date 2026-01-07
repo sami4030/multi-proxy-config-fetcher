@@ -56,10 +56,10 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
+        "🇵🇱 @ZEDMODEON 🇵🇱 93 (Poland)",
         "🇬🇧 @ZEDMODEON 🇬🇧 (United Kingdom)",
         "🇩🇪 @ZEDMODEON 🇩🇪 66 (Germany)",
         "🇳🇱 @ZEDMODEON 🇳🇱 160 (The Netherlands)",
-        "🇩🇪 @ZEDMODEON 🇩🇪 36 (Germany)",
         "Direct"
       ]
     },
@@ -67,10 +67,10 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
+        "🇵🇱 @ZEDMODEON 🇵🇱 93 (Poland)",
         "🇬🇧 @ZEDMODEON 🇬🇧 (United Kingdom)",
         "🇩🇪 @ZEDMODEON 🇩🇪 66 (Germany)",
-        "🇳🇱 @ZEDMODEON 🇳🇱 160 (The Netherlands)",
-        "🇩🇪 @ZEDMODEON 🇩🇪 36 (Germany)"
+        "🇳🇱 @ZEDMODEON 🇳🇱 160 (The Netherlands)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -83,6 +83,17 @@
     {
       "type": "block",
       "tag": "block"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 @ZEDMODEON 🇵🇱 93 (Poland)",
+      "server": "145.239.29.93",
+      "server_port": 48209,
+      "uuid": "cdd3952e-f4dc-41b9-83ca-733f0a3f0eb0",
+      "transport": {
+        "type": "grpc",
+        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
+      }
     },
     {
       "type": "vless",
@@ -112,17 +123,6 @@
       "server": "143.244.197.90",
       "server_port": 40191,
       "uuid": "c4c65266-80fb-4bf4-87ce-fb9e3deb3429",
-      "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 @ZEDMODEON 🇩🇪 36 (Germany)",
-      "server": "134.122.94.36",
-      "server_port": 53480,
-      "uuid": "f5c918d9-8534-45ed-8cb7-562c4a3f56c6",
       "transport": {
         "type": "grpc",
         "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
