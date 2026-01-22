@@ -56,7 +56,7 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇩🇪 @ZEDMODEON 🇩🇪 57 (Germany)",
+        "🇫🇷 @ZEDMODEON 🇫🇷 124 (France)",
         "🇬🇧 @ZEDMODEON 🇬🇧 25 (United Kingdom)",
         "🇵🇱 @ZEDMODEON 🇵🇱 93 (Poland)",
         "🇩🇪 @ZEDMODEON 🇩🇪 57-v6 (Germany)",
@@ -67,7 +67,7 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇩🇪 @ZEDMODEON 🇩🇪 57 (Germany)",
+        "🇫🇷 @ZEDMODEON 🇫🇷 124 (France)",
         "🇬🇧 @ZEDMODEON 🇬🇧 25 (United Kingdom)",
         "🇵🇱 @ZEDMODEON 🇵🇱 93 (Poland)",
         "🇩🇪 @ZEDMODEON 🇩🇪 57-v6 (Germany)"
@@ -86,10 +86,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 @ZEDMODEON 🇩🇪 57 (Germany)",
-      "server": "2001:41d0:701:1000::72a",
-      "server_port": 13356,
-      "uuid": "6752aae1-960a-40ff-87be-6b24f0e1ae32",
+      "tag": "🇫🇷 @ZEDMODEON 🇫🇷 124 (France)",
+      "server": "51.68.26.124",
+      "server_port": 51926,
+      "uuid": "79fb7024-1fa6-4ade-89af-eca20826bbb4",
       "transport": {
         "type": "grpc",
         "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
@@ -99,8 +99,8 @@
       "type": "vless",
       "tag": "🇬🇧 @ZEDMODEON 🇬🇧 25 (United Kingdom)",
       "server": "198.244.141.25",
-      "server_port": 25372,
-      "uuid": "4a19f1eb-a060-4f1f-b154-42197d1f55d6",
+      "server_port": 25374,
+      "uuid": "d97ef37b-503f-43cc-895f-888ada2b4a0e",
       "transport": {
         "type": "grpc",
         "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
@@ -110,8 +110,8 @@
       "type": "vless",
       "tag": "🇵🇱 @ZEDMODEON 🇵🇱 93 (Poland)",
       "server": "145.239.29.93",
-      "server_port": 48212,
-      "uuid": "7ccbdf17-042f-48d1-9d40-b7fdc9f1ade0",
+      "server_port": 48214,
+      "uuid": "96632fee-1702-4aab-b313-edf24bb9dc2a",
       "transport": {
         "type": "grpc",
         "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
