@@ -56,10 +56,10 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇵🇱 VL-4b3ec184 (Poland)",
         "🇩🇪 VL-ed19eb6b (Germany)",
         "🇩🇪 @ZEDMODEON 🇷🇴 57 (Germany)",
         "🇩🇪 @ZEDMODEON 🇮🇹 220 (Germany)",
+        "🇩🇪 @ZEDMODEON 🇱🇺 208 (Germany)",
         "Direct"
       ]
     },
@@ -67,10 +67,10 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇵🇱 VL-4b3ec184 (Poland)",
         "🇩🇪 VL-ed19eb6b (Germany)",
         "🇩🇪 @ZEDMODEON 🇷🇴 57 (Germany)",
-        "🇩🇪 @ZEDMODEON 🇮🇹 220 (Germany)"
+        "🇩🇪 @ZEDMODEON 🇮🇹 220 (Germany)",
+        "🇩🇪 @ZEDMODEON 🇱🇺 208 (Germany)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -83,17 +83,6 @@
     {
       "type": "block",
       "tag": "block"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 VL-4b3ec184 (Poland)",
-      "server": "2001:41d0:601:2000::767",
-      "server_port": 28577,
-      "uuid": "4b3ec184-fbd6-4c55-a36c-2600e5c007e3",
-      "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON…"
-      }
     },
     {
       "type": "vless",
@@ -115,6 +104,13 @@
       "server": "146.75.119.82",
       "server_port": 80,
       "uuid": "8bc2d742-c60a-44d2-bd12-b37f545bf263"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 @ZEDMODEON 🇱🇺 208 (Germany)",
+      "server": "146.75.119.82",
+      "server_port": 80,
+      "uuid": "d2453767-e809-4c3f-8857-40b9285ec692"
     }
   ],
   "route": {
