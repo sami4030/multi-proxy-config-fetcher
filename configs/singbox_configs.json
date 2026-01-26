@@ -56,10 +56,10 @@
       "tag": "Proxy",
       "outbounds": [
         "Auto",
-        "🇩🇪 @ZEDMODEON 🇷🇴 57 (Germany)",
-        "🇩🇪 @ZEDMODEON 🇮🇹 220 (Germany)",
-        "🇩🇪 @ZEDMODEON 🇱🇺 208 (Germany)",
-        "🇩🇪 @ZEDMODEON 🇨🇿 110 (Germany)",
+        "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
+        "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
+        "🇬🇧 @ZEDMODEON ⚡ 6d14 (United Kingdom)",
+        "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
         "Direct"
       ]
     },
@@ -67,10 +67,10 @@
       "type": "urltest",
       "tag": "Auto",
       "outbounds": [
-        "🇩🇪 @ZEDMODEON 🇷🇴 57 (Germany)",
-        "🇩🇪 @ZEDMODEON 🇮🇹 220 (Germany)",
-        "🇩🇪 @ZEDMODEON 🇱🇺 208 (Germany)",
-        "🇩🇪 @ZEDMODEON 🇨🇿 110 (Germany)"
+        "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
+        "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
+        "🇬🇧 @ZEDMODEON ⚡ 6d14 (United Kingdom)",
+        "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -86,31 +86,79 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 @ZEDMODEON 🇷🇴 57 (Germany)",
-      "server": "146.75.119.82",
-      "server_port": 80,
-      "uuid": "9223b9af-36d7-4d0d-9aa8-b139b94ec85f"
+      "tag": "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
+      "server": "25.129.199.0",
+      "server_port": 2052,
+      "uuid": "a66f90d8-cfc8-4eef-ad19-378aeede1d9b",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "FINLAND.SODOGODPING.IR"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 @ZEDMODEON 🇮🇹 220 (Germany)",
-      "server": "146.75.119.82",
-      "server_port": 80,
-      "uuid": "8bc2d742-c60a-44d2-bd12-b37f545bf263"
+      "tag": "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
+      "server": "25.129.197.138",
+      "server_port": 2087,
+      "uuid": "2452c5b1-26b3-4265-a2d8-818f62685f97",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudali.sudo-network.xyz",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/graphql"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 @ZEDMODEON 🇱🇺 208 (Germany)",
-      "server": "146.75.119.82",
-      "server_port": 80,
-      "uuid": "d2453767-e809-4c3f-8857-40b9285ec692"
+      "tag": "🇬🇧 @ZEDMODEON ⚡ 6d14 (United Kingdom)",
+      "server": "25.129.199.122",
+      "server_port": 2096,
+      "uuid": "6d148903-4d7f-4e98-9f86-f0197201cf90",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdshahin.dpdns.org",
+        "alpn": [
+          "http/1.1"
+        ],
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/starlink_elon_musk",
+        "headers": {
+          "Host": "mmdshahin.dpdns.org"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 @ZEDMODEON 🇨🇿 110 (Germany)",
-      "server": "146.75.119.82",
-      "server_port": 80,
-      "uuid": "7fee5dc4-c486-4f2b-8bcf-6af076ab2f66"
+      "tag": "🇬🇧 @ZEDMODEON ⚡ (United Kingdom)",
+      "server": "25.129.199.122",
+      "server_port": 2087,
+      "uuid": "2452c5b1-26b3-4265-a2d8-818f62685f97",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudali.sudo-network.xyz",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/graphql"
+      }
     }
   ],
   "route": {
